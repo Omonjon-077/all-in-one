@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,8 +15,74 @@
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
 
     <title>All in one</title>
+    <style>
+        @import url('https://fonts.cdnfonts.com/css/samsungone');
+
+        :root {
+            --body-font: 'SamsungOne', sans-serif, ;
+            --body-font2: 'Samsung Sharp Sans', sans-serif;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: var(--body-font) !important;
+            font-family: var(--body-font2) !important;
+        }
+
+        li,
+        ol,
+        ul {
+            list-style: none;
+        }
+
+        a {
+            text-decoration: none;
+            font-size: 22px;
+            color: whitesmoke;
+        }
+
+        @media (max-width:500px) {
+            h2 {
+                font-size: 25px !important;
+                padding-top: 25px !important;
+            }
+
+            a {
+                font-size: 20px;
+            }
+        }
+    </style>
 </head>
-<body>
-   
+
+<body style="background-color: #00DBDE;
+background-image: linear-gradient(90deg, #00DBDE 0%, #FC00FF 100%); height: 100vh;">
+    <h2 style="text-align: center; font-size: 35px; padding-top: 50px; color: white;">All Samsung projects here</h2>
+    <ul style="display: flex; flex-direction: column; row-gap: 15px; align-items: center;margin-top: 50px;">
+        <h4 style="text-align: center; font-size: 25px; padding: 5px 0; color: blue;">Recommended Links 👇</h4>
+        <li><a target="_blank" href="Luma/index.html">Luma</a></li>
+        <h4 style="text-align: center; font-size: 25px; padding: 15px 0 5px 0; color: blue;">Archive Links 👇</h4>
+        <li><a target="_blank" href="Alifshop/index.html">Alifshop</a></li>
+        <li><a target="_blank" href="B5/index.html">B5</a></li>
+        <li><a target="_blank" href="Mediapark/index.html">Mediapark</a></li>
+        <li><a target="_blank" href="Q5/index.html">Q5</a></li>
+        <li><a target="_blank" href="Q5B5/index.html">Q5B5</a></li>
+        <li><a target="_blank" href="Q5B5-Switcher/index.html">Q5B5-Switcher</a></li>
+        <li><a target="_blank" href="Q5B5-update/index.html">Q5B5-Update</a></li>
+    </ul>
+
+
+    <ul style="margin-top: 70px; padding: 0 10px; display: flex; align-items: center; justify-content: center;">
+        <p style="color: aliceblue; font-size: 16px; text-align: center;">
+            Developed by
+            <a target="_blank" style="text-transform: uppercase; color: black;" href="http://triger.uz/">Trigger
+                Company</a>
+            and
+            <a target="_blank" style="text-transform: uppercase; color: #00DBDE;"
+                href="http://omonjon.triger.uz/">Omonjon</a>
+        </p>
+    </ul>
 </body>
+
 </html>
