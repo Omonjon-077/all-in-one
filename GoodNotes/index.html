@@ -1,0 +1,609 @@
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title></title>
+    <style type="text/css">
+        @import url('https://fonts.cdnfonts.com/css/samsungone');
+
+        :root {
+            --body-font: 'SamsungOne', sans-serif, ;
+            --body-font2: 'Samsung Sharp Sans', sans-serif;
+        }
+
+        * {
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+            font-family: var(--body-font) !important;
+            font-family: var(--body-font2) !important;
+        }
+
+        /* Outlook link fix */
+        #outlook a {
+            padding: 0;
+        }
+
+        /* outlook.com background &amp; line height fixes */
+        .ExternalClass {
+            width: 100% !important;
+        }
+
+        .ExternalClass ecx * {
+            line-height: 100%;
+        }
+
+        .ExternalClass,
+        .ExternalClass p,
+        .ExternalClass span,
+        .ExternalClass font,
+        .ExternalClass td,
+        .ExternalClass div {
+            line-height: 100%;
+        }
+
+        /* Image borders &amp; formatting */
+        img {
+            outline: none;
+            text-decoration: none;
+            -ms-interpolation-mode: bicubic;
+        }
+
+        a img {
+            border: none;
+        }
+
+        /* Re-style iPhone automatic links (eg. phone numbers) */
+        .applelinks a {
+            color: #FFFFFF;
+            text-decoration: none;
+        }
+
+        /* outlook.com symbol fix for mobile devices */
+        .ExternalClass img[class^=Emoji] {
+            width: 10px !important;
+            height: 10px !important;
+            display: inline !important;
+        }
+
+        img {
+            -ms-interpolation-mode: bicubic;
+            border: none;
+        }
+
+        body,
+        p {
+            margin: 0;
+            padding: 0;
+            margin-bottom: 0;
+            -webkit-text-size-adjust: 100%;
+            -ms-text-size-adjust: 100%;
+        }
+
+        table,
+        tr,
+        td {
+            border-collapse: collapse;
+        }
+
+        table tr {
+            font-size: 0px;
+            border-collapse: collapse;
+        }
+
+        h1,
+        h2,
+        p {
+            text-decoration: none;
+        }
+
+        .appleLink a {
+            color: #FFFFFF;
+            text-decoration: none;
+        }
+
+        a {
+            text-decoration: none;
+            color: #000000;
+        }
+
+        .hide {
+            display: none !important;
+            visibility: none !important;
+            overflow: hidden !important;
+        }
+
+        @media screen and (max-width: 599px) {
+            .mobile-hide {
+                display: none !important;
+            }
+
+            .full-width-center {
+                width: auto !important;
+                height: auto !important;
+                text-align: center !important;
+            }
+
+            /* Height */
+            *[class].hauto {
+                height: auto !important;
+            }
+
+            *[class].w100pc {
+                width: 100% !important;
+            }
+
+
+            *[class].PB10px {
+                padding-bottom: 10px !important;
+            }
+
+            *[class].paddL10px {
+                padding-left: 10px !important;
+            }
+
+            *[class].PT20px {
+                padding-top: 20px !important;
+            }
+
+            *[class].PB20px {
+                padding-bottom: 20px !important;
+            }
+        }
+    </style>
+    <!--[if mso]>
+    <style type=”text/css”>
+        .ff {
+            font-family: 'SamsungOne', Arial, Helvetica, sans-serif;
+            text-decoration: none;
+        }
+    </style>
+    <![endif]-->
+    <!--[if gte mso 9]>
+    <xml>
+        <o:OfficeDocumentSettings>
+            <o:AllowPNG/>
+            <o:PixelsPerInch>96</o:PixelsPerInch>
+        </o:OfficeDocumentSettings>
+    </xml><![endif]-->
+    <style>
+        table,
+        tr,
+        td {
+            border-color: #E5E5E5;
+        }
+    </style>
+</head>
+
+<body bgcolor="#E5E5E5"
+    style="PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 0px; -webkit-text-size-adjust: none; background-color: #E5E5E5;">
+    <!--[if mso]>
+<style type="text/css">
+    body, table, td {
+        font-family: 'SamsungOne', Arial, Helvetica, sans-serif;
+    }
+</style>
+<![endif]-->
+    <div style="width:100%;background-color: #E5E5E5;">
+        <table width="640" class="w100pc" cellspacing="0" cellpadding="0" border="0" align="center" valign="middle"
+            style="font-family:'SamsungOne',Arial,Helvetica,sans-serif;font-size:14px;width:640px;margin:0 auto;line-height:1.5;background-color:#E5E5E5;color:#000000;"
+            bgcolor="#E5E5E5">
+            <tbody>
+                <tr>
+                    <td align="center" valign="middle" style="background-color:#E5E5E5;" bgcolor="#E5E5E5">
+                        <table class="w100pc" width="100%" style="width:100%;margin:0 auto;padding:0;text-align:center;"
+                            cellpadding="20" cellspacing="0">
+                            <tbody>
+                                <tr>
+                                    <td style="padding: 20px;" align="left" valign="middle">
+                                        <span
+                                            style="font-family: Arial, Helvetica,sans-serif;font-size:12px;text-align:center;color:#000000;margin:0;margin-bottom:6px;line-height:1.1; mso-line-height-rule:exactly;"
+                                            _label="00_unpacked_pre-header_text_pre-hr">Samsung Galaxy Unpacked
+                                            sovg'asiz kutilgandek bo'lmasligi aniq.</span>
+                                    </td>
+                                    <td style="padding: 20px;" valign="middle" align="right"><a
+                                            href="<%@ include view='MirrorPageUrl' %>" _label="Mirror Page"
+                                            _type="mirrorPage"
+                                            style="color:#000000;text-decoration:underline;font-size:12px;">Посмотреть
+                                            в&nbsp;браузере&nbsp;˃</a></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td style="height:20px;background-color:#E5E5E5;" height="20" bgcolor="#E5E5E5">&nbsp;</td>
+                </tr>
+
+            </tbody>
+        </table>
+        <table width="640" class="w100pc" cellspacing="0" cellpadding="0" border="0" align="center" valign="middle"
+            style="font-family:'SamsungOne',Arial,Helvetica,sans-serif;font-size:14px;width:640px;margin:0 auto;line-height:1.5;background-color:#E5E5E5;color:#000000;"
+            bgcolor="#E5E5E5">
+            <tr>
+                <td width="640" align="center">
+                    <table class="w100pc" cellspacing="0" cellpadding="0" border="0" align="center" valign="middle"
+                        style="font-family:'SamsungOne',Arial,Helvetica,sans-serif;font-size:14px;width:640px;margin:0 auto;line-height:1.5;background-color:#E5E5E5;color:#000000;">
+
+
+                        <!--BLOCK START-->
+                        <tr>
+                            <td
+                                style="mso-line-height-rule:exactly;background-color: #FFF; padding-top: 0px; padding-bottom: 60px;">
+                                <table style="background-color: #FFF;" cellpadding="0" cellspacing="0" border="0">
+                                    <tr>
+                                        <td width="640" style="height:32px;background-color:#FFF;" height="32">
+                                            &nbsp
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td width="640" style="height:32px;background-color:#FFF;" height="32">
+                                            &nbsp
+                                        </td>
+                                    </tr>
+
+
+                                    <tr>
+                                        <td style="text-align:center;padding-left:6%;padding-right:6%;background-color:#FFF;color:gray;"
+                                            class="w100pc hauto">
+                                            <p
+                                                style="font-size:40px;line-height:1.4;margin:0;text-align: center; font-weight: bolder; padding-bottom: 0">
+                                                GoodNotes
+                                            </p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="text-align:center;padding-left:6%;padding-right:6%;background-color:#FFF;color:#FFFFFF;"
+                                            class="w100pc hauto">
+                                            <p
+                                                style="font-size: 25px;padding-left: 50px; padding-right: 50px; color: gray; text-align: center; padding-bottom: 40px; font-weight: normal">
+                                                Эксклюзивные предложения для пользователей серии Galaxy Tab S9
+                                            </p>
+                                        </td>
+                                    </tr>
+
+                                    <tr style="height: 150px;">
+                                        <td width="640" style="text-align:left; padding-bottom: 40px;"
+                                            class="w100pc hauto">
+
+                                            <img width="640" border="0" src="i/1.png" alt="Это ваше приглашение"
+                                                style="display:block;margin:0 auto;padding-left: 50px; padding-right: 50px;" />
+                                            <p
+                                                style="font-size: 22px;padding-left: 50px; padding-right: 50px; color: gray; text-align: center; margin-top: 50px; font-weight: normal">
+                                                <span style="color: black; font-weight: bold;">Goodnotes</span> — Совершенно новый уровень ведения заметок
+                                                Попробуйте GoodNotes бесплатно на 1 год
+                                            </p>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+
+                        <!--BLOCK END-->
+                        <!--BLOCK START-->
+
+                        <tr>
+                            <td
+                                style="mso-line-height-rule:exactly;background-color: #f1f8ff; padding-top: 0; padding-bottom: 30px; margin-top: 15px">
+                                <table cellpadding="0" cellspacing="0" border="0">
+                                    <tr>
+                                        <td style="text-align:center;padding-left:6%;padding-right:6%;color:black;"
+                                            class="w100pc hauto">
+                                            <p
+                                                style="padding: 0; font-size:25px;line-height:1.4;text-align: center; font-weight: bolder; margin-top: 40px; margin-bottom: 0">
+                                                О предложении GoodNotes
+                                            </p>
+
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="text-align:center;padding-left:6%;padding-right:6%;color:black;"
+                                            class="w100pc hauto">
+                                            <p
+                                                style="padding: 0; font-size:25px;line-height:1.4;text-align: start; font-weight: bolder; margin-top: 40px; margin-bottom: 0">
+                                                Участники
+                                            </p>
+
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="text-align:center;padding-left:6%;padding-right:6%;color:gray;"
+                                            class="w100pc hauto">
+                                            <p
+                                                style="padding: 0; font-size:19px; width: 100%; line-height:1.4;text-align: start; color: gray; font-weight: bolder; margin-top: 15px; margin-bottom: 0">
+                                                Пользователи устройств Galaxy TabS9, Tab S9 Plus, Tab S9 Ultra
+                                            </p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="text-align:center;padding-left:6%;padding-right:6%;color:black;"
+                                            class="w100pc hauto">
+                                            <p
+                                                style="padding: 0; font-size:25px;line-height:1.4;text-align: start; font-weight: bolder; margin-top: 40px; margin-bottom: 0">
+                                                Инструкция
+                                            </p>
+
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="text-align:center;padding-left:6%;padding-right:6%;color:#FFF;"
+                                            class="w100pc hauto">
+                                            <p
+                                                style="padding: 0; font-size:19px; width: 100%; line-height:1.4;text-align: start; color: gray; font-weight: bolder; margin-top: 15px; margin-bottom: 0">
+                                                Нажмите на иконку приложения "GoodNotes" в в папке Galaxy Picks в окне Приложения, чтобы загрузить приложение GoodNotes на устройства Galaxy Tab S9 и войдите в приложение GoodNotes
+                                            </p>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        <!--BLOCK END-->
+
+                        <!--BLOCK START-->
+                        <tr>
+                            <td
+                                style="mso-line-height-rule:exactly;background-color: #4d5b80; padding-top: 0; padding-bottom: 30px; margin-top: 15px">
+                                <table cellpadding="0" cellspacing="0" border="0">
+                                    <tr>
+                                        <td style="text-align:center;padding-left:6%;padding-right:6%;color:white;"
+                                            class="w100pc hauto">
+                                            <p
+                                                style="padding: 0; font-size:25px;line-height:1.4;text-align: center; font-weight: bold; margin-top: 40px; margin-bottom: 0">
+                                                Представляем <span style="font-weight: lighter;">Good Notes</span> — ваше новое любимое приложения для заметок в Galaxy Tab
+                                            </p>
+                                        </td>
+                                    </tr>
+                                    <tr style="height: 150px;">
+                                        <td width="640" style="text-align:left; padding: 40px 0;"
+                                            class="w100pc hauto">
+                                            <img width="400" border="0" src="i/2.png" alt="Это ваше приглашение"
+                                                style="display:block;margin:0 auto;" />
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="text-align:center;padding-left:6%;padding-right:6%;color:white;"
+                                            class="w100pc hauto">
+                                            <p
+                                                style="padding: 0; font-size:25px;line-height:1.4;text-align: center; font-weight: bold; margin-top: 0px; margin-bottom: 0">
+                                                Наслаждайтесь заметками в вашем стиле
+                                            </p>
+
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="text-align:center;padding-left:6%;padding-right:6%;color:#E5E5E5;"
+                                            class="w100pc hauto">
+                                            <p
+                                                style="padding: 0; font-size:19px; width: 100%; line-height:1.4;text-align: center; color: #E5E5E5; font-weight: normal; margin-top: 15px; margin-bottom: 0">
+                                                Откройте файл и начните писать в вашем Galaxy Tab с помощью S Pen, будто это ваша тетрадь
+                                            </p>
+                                        </td>
+                                    </tr>
+                                    <tr style="height: 150px;">
+                                        <td width="640" style="text-align:left; padding: 40px 0;"
+                                            class="w100pc hauto">
+                                            <img width="400" border="0" src="i/3.png" alt="Это ваше приглашение"
+                                                style="display:block;margin:0 auto;" />
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="text-align:center;padding-left:6%;padding-right:6%;color:white;"
+                                            class="w100pc hauto">
+                                            <p
+                                                style="padding: 0; font-size:25px;line-height:1.4;text-align: center; font-weight: bold; margin-top: 0px; margin-bottom: 0">
+                                                Индивидуальные шаблоны в вашем стиле
+                                            </p>
+
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="text-align:center;padding-left:6%;padding-right:6%;color:#FFF;"
+                                            class="w100pc hauto">
+                                            <p
+                                                style="padding: 0; font-size:19px; width: 100%; line-height:1.4;text-align: center; color:#E5E5E5; font-weight: normal; margin-top: 15px; margin-bottom: 0">
+                                                Попробуйте различные шаблоны, чтобы вдохновляться при каждом использовании.
+                                                Вы также можете создать свой индивидуальный шаблон.
+                                            </p>
+                                        </td>
+                                    </tr>
+                                    <tr style="height: 150px;">
+                                        <td width="640" style="text-align:left; padding: 40px 0;"
+                                            class="w100pc hauto">
+                                            <img width="400" border="0" src="i/4.png" alt="Это ваше приглашение"
+                                                style="display:block;margin:0 auto;" />
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="text-align:center;padding-left:6%;padding-right:6%;color:white;"
+                                            class="w100pc hauto">
+                                            <p
+                                                style="padding: 0; font-size:25px;line-height:1.4;text-align: center; font-weight: bold; margin-top: 0px; margin-bottom: 0">
+                                                Легко делитесь заметками в любом месте, Совместно работайте над общими заметками
+                                            </p>
+
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="text-align:center;padding-left:6%;padding-right:6%;color:#FFF;"
+                                            class="w100pc hauto">
+                                            <p
+                                                style="padding: 0; font-size:19px; width: 100%; line-height:1.4;text-align: center; color:#E5E5E5; font-weight: normal; margin-top: 15px; margin-bottom: 0">
+                                                Экспортируйте, делитесь или печатайте документы в формате PDF. Включите общий доступ к ссылкам для совместной работы с документом.
+                                            </p>
+                                        </td>
+                                    </tr>
+                                    <tr style="height: 150px;">
+                                        <td width="640" style="text-align:left; padding: 40px 0;"
+                                            class="w100pc hauto">
+                                            <img width="400" border="0" src="i/5.png" alt="Это ваше приглашение"
+                                                style="display:block;margin:0 auto;" />
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="text-align:center;padding-left:6%;padding-right:6%;color:white;"
+                                            class="w100pc hauto">
+                                            <p
+                                                style="padding: 0; font-size:25px;line-height:1.4;text-align: center; font-weight: bold; margin-top: 0px; margin-bottom: 0">
+                                                Темный режим, днем или ночью
+                                            </p>
+
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="text-align:center;padding-left:6%;padding-right:6%;color:#FFF;"
+                                            class="w100pc hauto">
+                                            <p
+                                                style="padding: 0; font-size:19px; width: 100%; line-height:1.4;text-align: center; color:#E5E5E5; font-weight: normal; margin-top: 15px; margin-bottom: 0">
+                                                Поддержка темного режима, Комфорт для глаз.
+                                            </p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="text-align:center;padding-left:6%;padding-right:6%;color:#FFF; padding-top: 10px"
+                                            class="w100pc hauto">
+                                            <p
+                                                style="padding: 0; font-size:17px; width: 100%; line-height:1.4;text-align: center; color: gray; font-weight: bolder; margin-top: 10px; margin-bottom: 0">
+                                                <span style="margin-right: 4px;">*</span>Настоящий UX/UI может отличаться
+                                            </p>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        <!--BLOCK END-->
+
+                        <!--BLOCK START-->
+                        <tr>
+                            <td
+                                style="mso-line-height-rule:exactly;background-color: #373b46; padding-top: 0; padding-bottom: 40px; margin-top: 15px">
+                                <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                                    <tr>
+                                        <td style="text-align:center;padding-left:6%;padding-right:6%;color:#FFF;"
+                                            class="w100pc hauto">
+                                            <p
+                                                style="font-size:27px;line-height:1.4;text-align: center; font-weight: lighter; margin-top: 40px; margin-bottom: 0px">
+                                                Правила и условия
+                                            </p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="text-align:center;padding-left:6%;padding-right:6%;color:#FFF; padding-top: 10px"
+                                            class="w100pc hauto">
+                                            <p
+                                                style="padding: 0; font-size:17px; width: 100%; line-height:1.4;text-align: start; color: gray; font-weight: bolder; margin-top: 10px; margin-bottom: 0">
+                                                <span style="margin-right: 4px;">*</span>Приложение GoodNotes может быть загружено с Samsung Galaxy Store на выбранных рынках
+                                            </p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="text-align:center;padding-left:6%;padding-right:6%;color:#FFF; padding-top: 10px"
+                                            class="w100pc hauto">
+                                            <p
+                                                style="padding: 0; font-size:17px; width: 100%; line-height:1.4;text-align: start; color: gray; font-weight: bolder; margin-top: 10px; margin-bottom: 0">
+                                                <span style="margin-right: 4px;">*</span>Услуги и функции предоставляемые в приложении GoodNotes могут различаться в зависимости от версии приложения.
+                                            </p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="text-align:center;padding-left:6%;padding-right:6%;color:#FFF; padding-top: 10px"
+                                            class="w100pc hauto">
+                                            <p
+                                                style="padding: 0; font-size:17px; width: 100%; line-height:1.4;text-align: start; color: gray; font-weight: bolder; margin-top: 10px; margin-bottom: 0">
+                                                <span style="margin-right: 4px;">*</span>Доступность приложения GoodNotes может зависеть от версии ОС и модели Galaxy Tab
+                                            </p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="text-align:center;padding-left:6%;padding-right:6%;color:#FFF; padding-top: 10px"
+                                            class="w100pc hauto">
+                                            <p
+                                                style="padding: 0; font-size:17px; width: 100%; line-height:1.4;text-align: start; color: gray; font-weight: bolder; margin-top: 10px; margin-bottom: 0">
+                                                <span style="margin-right: 4px;">*</span>Доступность приложения GoodNotes также может зависеть от страны и региона
+                                            </p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="text-align:center;padding-left:6%;padding-right:6%;color:#FFF; padding-top: 10px"
+                                            class="w100pc hauto">
+                                            <p
+                                                style="padding: 0; font-size:17px; width: 100%; line-height:1.4;text-align: start; color: gray; font-weight: bolder; margin-top: 10px; margin-bottom: 0">
+                                                <span style="margin-right: 4px;">*</span>По истечении 1 года бесплатного использования приложения Good Notes для постоянного использования может потребоваться платная подписка. Однако в случае последующей первой оплаты подписки предоставляется скидка в размере 20%.
+                                            </p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="text-align:center;padding-left:6%;padding-right:6%;color:#FFF; padding-top: 10px"
+                                            class="w100pc hauto">
+                                            <p
+                                                style="padding: 0; font-size:17px; width: 100%; line-height:1.4;text-align: start; color: gray; font-weight: bolder; margin-top: 10px; margin-bottom: 0">
+                                                <span style="margin-right: 4px;">*</span>Скидка распространяется только на пользователей Galaxy Tab серии S9. Требуется загрузить полную версию приложения GoodNotes для устройств серии Galaxy Tab S9 из магазина Samsung Galaxy Store.
+                                            </p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="text-align:center;padding-left:6%;padding-right:6%;color:#FFF; padding-top: 10px"
+                                            class="w100pc hauto">
+                                            <p
+                                                style="padding: 0; font-size:17px; width: 100%; line-height:1.4;text-align: start; color: gray; font-weight: bolder; margin-top: 10px; margin-bottom: 0">
+                                                <span style="margin-right: 4px;">*</span>Бесплатная подписка на 1 год предоставляется только один раз для каждого устройства, и автоматически предоставляются учетной записи пользователя GoodNotes при входе в приложение. Бесплатная подписка не предоставляется, если учетная запись пользователя уже подключена к какой-либо другой платной подписке. Вы можете запросить бесплатную подписки по истечении периода другой платной подписки или с другим идентификатором, который не зарегистрирован ни в одной подписке.
+                                            </p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="text-align:center;padding-left:6%;padding-right:6%;color:#FFF; padding-top: 10px"
+                                            class="w100pc hauto">
+                                            <p
+                                                style="padding: 0; font-size:17px; width: 100%; line-height:1.4;text-align: start; color: gray; font-weight: bolder; margin-top: 10px; margin-bottom: 0">
+                                                <span style="margin-right: 4px;">*</span>Для загрузки приложения GoodNotes требуется войти в систему Galaxy Store.
+                                            </p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="text-align:center;padding-left:6%;padding-right:6%;color:#FFF; padding-top: 10px"
+                                            class="w100pc hauto">
+                                            <p
+                                                style="padding: 0; font-size:17px; width: 100%; line-height:1.4;text-align: start; color: gray; font-weight: bolder; margin-top: 10px; margin-bottom: 0">
+                                                <span style="margin-right: 4px;">*</span>Для загрузки и использования приложения Good Notes требуется подключение к сети, а за загрузку и использование приложения GoodNotes с мобильными данными может взиматься дополнительная плата.
+                                            </p>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+
+                        <!--BLOCK END-->
+
+                        <!--BLOCK START-->
+                        <tr style="display: none;">
+                            <td
+                                style="mso-line-height-rule:exactly;background-color: #000000; padding-bottom: 60px; margin-top: 15px">
+                                <table bgcolor="" style="width: 100%;" cellpadding="0" cellspacing="0" border="0">
+                                    <tr>
+                                        <td
+                                            style="align-items: center; padding: 0 40px; display: flex;  gap: 15px; margin: 0 auto;  padding-bottom: 15px">
+                                            <p
+                                                style="font-size: 20px; display: flex; flex-direction: column; font-weight: bold; color: white; width: 200px; text-align: start;">
+                                                LumaFusion для Galaxy
+                                                Дешевле до 50% <br>
+                                                <span style="color: gray; font-size: 18px;margin-top: 10px">Доступно до
+                                                    31.8.2024</span>
+                                            </p>
+                                            <img style="width: 270px; margin-left: auto;" width="" src="i/4.png" alt="">
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+
+                        <!--BLOCK END-->
+                    </table>
+    </div>
+</body>
+
+</html>
