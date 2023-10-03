@@ -14,6 +14,9 @@
     <!--============== BOX ICONS CSS 2.1.4v | Omonjon ==============-->
     <link rel="stylesheet" href="assets/styles/boxicons.min.css">
 
+    <!--============== SWIPER CSS 8.1.1v | Omonjon ==============-->
+    <link rel="stylesheet" href="assets/styles/swiper-bundle.min.css">
+
     <!--================ BOOTSTRAP CSS 5.3v | Omonjon ===============-->
     <link rel="stylesheet" href="assets/styles/bootstrap.min.css">
 
@@ -41,6 +44,7 @@
         </div>
     </nav>
 </header>
+
 <!--================ MAIN | Omonjon ================-->
 <main>
     <!--================ GADGET | Omonjon ================-->
@@ -118,12 +122,37 @@
             </div>
         </div>
     </section>
+
     <!--================ BANNER | Omonjon ================-->
     <section class="banner">
         <div class="container">
-            <div class="d-flex align-items-start justify-content-center bg-banner flex-column ps-3 ps-sm-5">
-                <h4 class="text-black fw-bold fs-1 ps-xl-5">Galaxy Z Flip5 | Fold5</h4>
-                <h4 class="text-black fw-bold fs-2 ps-xl-5 mt-2">Выбирайте гибкость</h4>
+            <div class="swiper bannerSwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="d-flex align-items-start justify-content-center bg-banner-1 flex-column ps-3 ps-sm-5">
+                            <h4 class="text-black fw-bold fs-1 ps-xl-5">Galaxy Z Flip5 | Fold5</h4>
+                            <h4 class="text-black fw-bold fs-2 ps-xl-5 mt-2">Выбирайте гибкость</h4>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="d-flex align-items-start justify-content-center bg-banner-2 flex-column ps-3 ps-sm-5">
+                            <h4 class="text-white fw-bold fs-1 ps-xl-5">Серия Galaxy S23</h4>
+                            <h4 class="text-white fw-bold fs-2 ps-xl-5 mt-2">Делитесь. Впечатляйте</h4>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="d-flex align-items-start justify-content-center bg-banner-3 flex-column ps-3 ps-sm-5">
+                            <h4 class="text-black fw-bold fs-1 ps-xl-5">Galaxy Watch6 </h4>
+                            <h4 class="text-black fw-bold fs-2 ps-xl-5 mt-2">Начните свой путь <br> к вершине</h4>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="d-flex align-items-end justify-content-center bg-banner-4 flex-column pe-3 pe-sm-5">
+                            <h4 class="text-black fw-bold fs-1 pe-xl-5">Серия Galaxy A</h4>
+                            <h4 class="text-black fw-bold fs-2 pe-xl-5 mt-2">Великолепно для всех</h4>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -176,6 +205,7 @@
             </div>
         </div>
     </section>
+
     <!--================ CATEGORY | Omonjon ================-->
     <section class="category">
         <h4 class="fs-2 text-black fw-bold text-center">Все категории</h4>
@@ -198,7 +228,8 @@
                     </div>
                 </div>
                 <div class="col-12 col-xl-3 col-lg-3 col-md-4 col-sm-6">
-                    <div style="height: 111px;" class="d-flex flex-column justify-content-center align-items-center h-100">
+                    <div style="height: 111px;"
+                         class="d-flex flex-column justify-content-center align-items-center h-100">
                         <div class="d-flex align-items-center justify-content-center">
                             <img src="./assets/images/svg/category-3.svg" alt="">
                         </div>
@@ -263,6 +294,9 @@
 
 <!--================ BOOTSTRAP JS 5.3.1v | Omonjon ================-->
 <script src="assets/script/bootstrap.bundle.min.js"></script>
+
+<!--============== SWIPER CSS 8.1.1v | Omonjon ==============-->
+<script src="assets/script/swiper-bundle.min.js"></script>
 
 <!--================ MAIN JS | Omonjon ================-->
 <script src="assets/script/main.js?v=0.0.1"></script>

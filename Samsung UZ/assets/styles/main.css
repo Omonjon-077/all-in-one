@@ -276,8 +276,26 @@ a {
 }
 
 /*=============== BANNER | Omonjon ===============*/
-.bg-banner{
+.bg-banner-1{
     background: url("../images/bg-1.png") no-repeat center/cover;
+    width: 100%;
+    height: 257px;
+}
+
+.bg-banner-2{
+    background: url("../images/bg-2.png") no-repeat center/cover;
+    width: 100%;
+    height: 257px;
+}
+
+.bg-banner-3{
+    background: url("../images/bg-3.png") no-repeat center/cover;
+    width: 100%;
+    height: 257px;
+}
+
+.bg-banner-4{
+    background: url("../images/bg-4.png") no-repeat center/cover;
     width: 100%;
     height: 257px;
 }
