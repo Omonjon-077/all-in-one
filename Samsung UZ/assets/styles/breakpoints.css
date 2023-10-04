@@ -1,6 +1,3 @@
-/* ============ only desktop view for dropdown menus | Omonjon ============ */
-
-/* ============ desktop view .end// ============ */
 @media (max-width: 767px) {
     .scroll_up {
         right: 1rem;
@@ -10,5 +7,142 @@
 @media (max-width: 575px) {
     .scrollup {
         right: 1rem;
+    }
+
+    /*    For Mobile Item section  */
+    .h-item-l {
+        height: 136px !important;
+    }
+
+    .h-item-r {
+        height: 288px !important;
+    }
+
+    .mt-item {
+        margin-top: 32px !important;
+    }
+
+    .fs-item {
+        font-size: 14px !important;
+        font-style: normal !important;
+        font-weight: 700 !important;
+        text-align: center !important;
+        line-height: 18px !important;
+    }
+
+    /*  For banner section  */
+    .bg-banner-1 {
+        background: url("../images/bg-1m.png") no-repeat center/cover;
+        width: 100%;
+        height: 230px;
+    }
+
+    .bg-banner-1 .text-black {
+        font-size: 22px !important;
+        font-style: normal !important;
+        font-weight: 700 !important;
+        text-align: center !important;
+        line-height: 26px !important;
+    }
+
+    .bg-banner-1 .text-black:nth-child(2) {
+        font-size: 16px !important;
+        font-style: normal !important;
+        font-weight: 700 !important;
+        text-align: center !important;
+        line-height: 20px !important;
+    }
+
+    .bg-banner-2 {
+        background: url("../images/bg-2m.png") no-repeat center/cover;
+        width: 100%;
+        height: 230px;
+    }
+
+    .bg-banner-2 .text-white {
+        font-size: 22px !important;
+        font-style: normal !important;
+        font-weight: 700 !important;
+        text-align: center !important;
+        line-height: 26px !important;
+    }
+
+    .bg-banner-2 .text-white:nth-child(2) {
+        font-size: 16px !important;
+        font-style: normal !important;
+        font-weight: 700 !important;
+        text-align: center !important;
+        line-height: 20px !important;
+    }
+
+    .bg-banner-3 {
+        background: url("../images/bg-3m.png") no-repeat center/cover;
+        width: 100%;
+        height: 230px;
+    }
+
+    .bg-banner-3 .text-black {
+        font-size: 22px !important;
+        font-style: normal !important;
+        font-weight: 700 !important;
+        text-align: start !important;
+        line-height: 26px !important;
+    }
+
+    .bg-banner-3 .text-black:nth-child(2) {
+        font-size: 16px !important;
+        font-style: normal !important;
+        font-weight: 700 !important;
+        text-align: start !important;
+        line-height: 20px !important;
+    }
+
+
+    .bg-banner-4 {
+        background: url("../images/bg-4m.png") no-repeat center/cover;
+        width: 100%;
+        height: 230px;
+    }
+
+    .bg-banner-4 .text-black {
+        font-size: 22px !important;
+        font-style: normal !important;
+        font-weight: 700 !important;
+        text-align: center !important;
+        line-height: 26px !important;
+    }
+
+    .bg-banner-4 .text-black:nth-child(2) {
+        font-size: 16px !important;
+        font-style: normal !important;
+        font-weight: 700 !important;
+        text-align: center !important;
+        line-height: 20px !important;
+    }
+
+    /*  For Phones Section  */
+    .title-phone {
+        font-size: 12px !important;
+        font-style: normal !important;
+        font-weight: 700 !important;
+        text-align: center !important;
+        line-height: 14.043px !important;
+    }
+
+    .btn-phone {
+        font-size: 12px !important;
+        font-style: normal !important;
+        font-weight: 700 !important;
+        padding: 5.401px 17.284px !important;
+        line-height: 14.043px !important;
+    }
+
+    /*  For category Section  */
+    .fs-category{
+        font-size: 12px !important;
+        text-align: center !important;
+        font-style: normal !important;
+        font-weight: 700 !important;
+        line-height: 14px !important;
     }
 }
