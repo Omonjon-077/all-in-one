@@ -1,0 +1,274 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+/* Bootstrap tools | Omonjon */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-shadow: 0px 0px 90px 0px rgba(72, 77, 92, 0.15);
+    --body-font: 'Inter';
+}
+
+body {
+    font-family: var(--body-font);
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+.body-font {
+    font-family: var(--body-font), sans-serif;
+}
+
+.no-select {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    pointer-events: none;
+    cursor: default;
+}
+
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+    padding-right: 0;
+    padding-left: 0;
+    padding-bottom: 0;
+    padding-top: 0;
+}
+
+.accordion-button::after {
+    display: none;
+}
+
+button[aria-expanded^="true"] i {
+    background-color: var(--bs-primary) !important;
+    transform: rotate(-180deg) !important;
+    color: black !important;
+    box-shadow: 0px 8px 18px -8px rgba(116, 246, 0, 0.90);
+}
+
+.btn-primary {
+    color: var(--bs-primary);
+    background: var(--bs-secondary);
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.box-shadow-none {
+    box-shadow: none !important;
+}
+
+.text-gray {
+    color: var(--bs-gray) !important;
+}
+
+.form-control:focus {
+    box-shadow: 0 0 0 0.25rem var(--bs-secondary);
+    border-color: var(--bs-secondary);
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+.bg-gray {
+    background-color: #131720 !important;
+}
+
+.primary-shadow {
+    box-shadow: var(--primary-shadow);
+}
+
+.bg-gray-light {
+    background-color: #1c2029 !important;
+}
+
+.btn-secondary {
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--bs-white);
+    border: 1px solid var(--bs-white);
+    background: transparent;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+.z-index-1 {
+    z-index: 1;
+}
+
+.transform-180-deg {
+    -webkit-transform: rotate(180deg); /* apparently that Z stuff is needed for webkit browsers like chrome */
+    -moz-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+
+.border-gray{
+    border-color: var(--bs-gray) !important;
+}
+
+.z-index-2 {
+    z-index: 2;
+}
+
+.z-index-3 {
+    z-index: 3;
+}
+
+.z-index-4 {
+    z-index: 4;
+}
+
+.z-index-5 {
+    z-index: 5;
+}
+
+.z-index-6 {
+    z-index: 6;
+}
+
+.z-index-7 {
+    z-index: 7;
+}
+
+.z-index-8 {
+    z-index: 8;
+}
+
+.z-index-9 {
+    z-index: 9;
+}
+
+.z-index-10 {
+    z-index: 10;
+}
+
+.fs-6 {
+    font-size: 1.25rem !important;
+}
+
+.fs-7 {
+    font-size: 1rem !important;
+}
+
+.fs-8 {
+    font-size: 0.875rem !important;
+}
+
+.fs-9 {
+    font-size: 0.75rem !important;
+}
+
+.w-max-content {
+    width: max-content !important;
+}
+
+.opacity-7 {
+    opacity: 0.7;
+}
+
+.outline-none {
+    outline: none;
+}
+
+.transition {
+    transition: .4s;
+}
+
+.fs-title {
+    font-size: 2.25rem;
+}
+
+.fs-title-sec {
+    font-size: 1.625rem;
+}
+
+input,
+button {
+    outline: none;
+}
+
+.border-none {
+    border: none;
+}
+
+.primary-hover:hover {
+    color: var(--bs-secondary) !important;
+}
+
+.scroll-behavior {
+    scroll-behavior: smooth !important;
+}
+
+li,
+ul,
+ol {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+p {
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+/*=============== SELF | Omonjon ===============*/
+.self-width{
+    width: 70px !important;
+    height: 70px !important;
+}
+
+.self-absolute {
+    top: -37px;
+    right: 25px;
+}
+
+.self-absolute1 {
+    top: -37px;
+    right: 17px;
+}
+
+.self-absolute-2{
+    top: -37px;
+    right: -5px;
+}
+
+.self-absolute-3{
+    top: -37px;
+    right: -17px;
+}
+
+.year .boxed-check-group.boxed-check-success .boxed-check .boxed-check-input:checked + .boxed-check-label {
+    color: black;
+    background-color: var(--bs-black);
+}
+
+textarea{
+    resize: none;
+}
