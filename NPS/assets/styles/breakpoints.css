@@ -8,5 +8,34 @@
 }
 
 @media (max-width: 575px) {
+    .self-absolute-2{
+        top: -25px;
+        right: -15px;
+    }
 
+    .self-fsT{
+        font-size: 18px !important;
+    }
+
+    .self-fsT2 {
+        font-size: 16px !important;
+    }
+
+    .self-absolute {
+        top: -25px;
+        right: 33px;
+    }
+
+    .self-absolute1 {
+        top: -25px;
+        right: 30px;
+    }
+
+    .self-absolute-3{
+        top: -25px;
+        right: -30px;
+    }
+    .self-fs{
+        font-size: 14px !important;
+    }
 }
