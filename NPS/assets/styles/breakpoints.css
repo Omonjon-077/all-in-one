@@ -1,39 +1,12 @@
 @media (min-width: 1200px) {
-    .section-title{
-        transform: translateY(60px);
-        text-align: start;
-        font-size: 128px;
-        font-style: normal;
-        font-weight: 700;
-        color: var(--bs-primary);
-        opacity: .1;
-        line-height: normal;
-        text-transform: uppercase;
-    }
 }
 
 @media (min-width: 575px) {
-    .border-lg-end{
-        border-right: 1px solid var(--bs-gray);
-    }
 }
 
 @media (max-width: 767px) {
-    .scroll_up {
-        right: 1rem;
-    }
 }
 
 @media (max-width: 575px) {
-    .scrollup {
-        right: 1rem;
-    }
 
-    .site-logo{
-        width: 150px;
-    }
-
-    .footer-form{
-        width: 270px !important;
-    }
 }
