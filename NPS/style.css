@@ -1,0 +1,423 @@
+@font-face {
+    font-family: 'SamsungOne';
+    src: url(https://cdn.samsung.com/etc/designs/smg/global/fonts/SamsungOne-400.eot);
+    src: url(https://cdn.samsung.com/etc/designs/smg/global/fonts/SamsungOne-400.eot?#iefix) format("embedded-opentype"), url(https://cdn.samsung.com/etc/designs/smg/global/fonts/SamsungOne-400.woff2) format("woff2"), url(https://cdn.samsung.com/etc/designs/smg/global/fonts/SamsungOne-400.woff) format("woff"), url(https://cdn.samsung.com/etc/designs/smg/global/fonts/SamsungOne-400.ttf) format("truetype");
+    font-weight: normal;
+    font-style: normal
+}
+
+@font-face {
+    font-family: 'SamsungOne';
+    src: url(https://cdn.samsung.com/etc/designs/smg/global/fonts/SamsungOne-700.eot);
+    src: url(https://cdn.samsung.com/etc/designs/smg/global/fonts/SamsungOne-700.eot?#iefix) format("embedded-opentype"), url(https://cdn.samsung.com/etc/designs/smg/global/fonts/SamsungOne-700.woff2) format("woff2"), url(https://cdn.samsung.com/etc/designs/smg/global/fonts/SamsungOne-700.woff) format("woff"), url(https://cdn.samsung.com/etc/designs/smg/global/fonts/SamsungOne-700.ttf) format("truetype");
+    font-weight: bold;
+    font-style: normal
+}
+
+@font-face {
+    font-family: 'SamsungSharpSans';
+    src: url(https://cdn.samsung.com/etc/designs/smg/global/fonts/SamsungSharpSansBd.eot);
+    src: url(https://cdn.samsung.com/etc/designs/smg/global/fonts/SamsungSharpSansBd.eot?#iefix) format("embedded-opentype"), url(https://cdn.samsung.com/etc/designs/smg/global/fonts/SamsungSharpSansBd.woff) format("woff");
+    font-weight: bold;
+    font-style: normal
+}
+
+body {
+    font-family: 'SamsungSharpSans', sans-serif;
+}
+
+@media all {
+    .kv, .nps.s-section, .s-button {
+        box-sizing: border-box
+    }
+
+    .s-button, .s-button._black {
+        background: #000;
+        color: #fff
+    }
+
+    .s-section {
+        padding: 20px;
+        max-width: 1440px;
+        font-size: 14px;
+        line-height: 1.3;
+        margin: 40px auto 0
+    }
+
+    .s-section:first-of-type {
+        margin-top: 0
+    }
+
+    .s-section:last-of-type {
+        margin-bottom: 40px
+    }
+
+    .s-title {
+        margin: 0 0 1em;
+        font-weight: 700;
+        line-height: 1.3;
+        font-family: SamsungSharpSans, sans-serif;
+        cursor: default
+    }
+
+    .s-title._h1 {
+        font-size: 24px
+    }
+
+    .s-button {
+        -webkit-box-shadow: inset 0 0 0 1px #000;
+        box-shadow: inset 0 0 0 1px #000;
+        border-radius: 20px;
+        height: 40px;
+        border: none;
+        outline: 0;
+        font-size: 14px;
+        text-align: center;
+        appearance: none;
+        width: auto;
+        transition: opacity .2s, color .2s, background .2s;
+        cursor: pointer;
+        text-transform: uppercase;
+        font-weight: 700;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0 20px
+    }
+
+    .nps__legal, .nps__radios {
+        margin-top: 20px
+    }
+
+    .s-button[disabled] {
+        opacity: .3;
+        cursor: not-allowed;
+        pointer-events: none
+    }
+
+    .s-button:not([disabled]):hover {
+        background: rgba(0, 0, 0, 0);
+        color: #000
+    }
+
+    .s-button._black:not([disabled]):hover {
+        background: #333;
+        color: #fff
+    }
+
+    .kv {
+        background: linear-gradient(to bottom, rgba(0, 0, 0, .75), rgba(0, 0, 0, 0) 30%) 0 0/cover, url("https://images.samsung.com/is/image/samsung/assets/ru/cdm/npscdm/kv1_720.png") left 63% center/cover no-repeat;
+        height: 420px
+    }
+
+    .kv__title.s-title {
+        color: #fff;
+        text-align: center;
+        margin-right: -10px;
+        margin-left: -10px
+    }
+
+    @media (min-width: 721px) {
+        .kv {
+            background: linear-gradient(to right, rgba(0, 0, 0, .75), rgba(0, 0, 0, 0) 60%), url("https://images.samsung.com/is/image/samsung/assets/ru/cdm/npscdm/kv1_1440_420.png") top center no-repeat
+        }
+    }.nps__radio, .nps__success {
+         text-align: center;
+         font-weight: 700
+     }
+
+    .nps.s-section {
+        background: #f0f0f0;
+        margin-top: 0;
+        padding: 20px
+    }
+
+    .nps__form {
+        display: flex;
+        flex-direction: column;
+        align-items: center
+    }
+
+    .nps__success {
+        display: none
+    }
+
+    .nps__block {
+        width: 100%;
+        margin-bottom: 20px
+    }
+
+    .nps__question {
+        font-weight: 700;
+        margin-bottom: 10px;
+        font-size: 16px;
+        cursor: default
+    }
+
+    .nps__question .nps__textpiece {
+        display: inline
+    }
+
+    .nps__legend {
+        font-size: 12px
+    }
+
+    .nps__legend .nps__textpiece {
+        display: block
+    }
+
+    .nps__radios {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between
+    }
+
+    .second-section.nps__radios {
+        justify-content: initial;
+    }
+
+    .second-section .nps__radio {
+        max-width: 57px;
+        font-size: 20px;
+    }
+
+    .nps__area, .nps__radio:after {
+        display: block;
+        box-sizing: border-box
+    }
+
+    .nps__radio {
+        width: 7%;
+        max-width: 50px;
+        margin-right: 2%;
+        position: relative;
+        font-size: 18px;
+        transition: color .3s;
+        cursor: pointer;
+        user-select: none
+    }
+
+    .nps__radio:last-child {
+        margin-right: 0
+    }
+
+    .nps__radio:before {
+        content: "";
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        padding-top: 100%;
+        border-radius: 50%;
+        background: #404040;
+        transform: scale(0);
+        transition: transform .3s, background .3s
+    }
+
+    .nps__radio:after {
+        content: "";
+        padding-top: calc(100% - 2px);
+        border-radius: 50%;
+        border: 1px solid #404040;
+        margin-top: 5px;
+        transition: border-color .3s
+    }
+
+    .nps__radio._active {
+        color: #3682f6;
+        cursor: default
+    }
+
+    .nps__radio:not(._active):hover:before {
+        transform: scale(.2)
+    }
+
+    .nps__radio._active:before {
+        transform: scale(.5);
+        background: #3682f6
+    }
+
+    .nps__radio._active:after {
+        border-color: #3682f6
+    }
+
+    .nps__area {
+        font-size: 16px;
+        width: 100%;
+        resize: none;
+        border: 1px solid #abacab;
+        border-radius: 10px;
+        outline: 0;
+        padding: 10px;
+        overflow: auto;
+        height: 240px
+    }
+
+    .nps__legal, .nps__legal-info {
+        align-self: flex-start;
+        font-size: 12px
+    }
+
+    .nps__submit {
+        min-width: 160px;
+        user-select: none
+    }
+
+    .nps__legal-info {
+        width: 100%;
+        margin-bottom: 20px;
+        text-align: center
+    }
+
+    .nps__legal-info a {
+        color: inherit;
+        text-decoration: underline
+    }
+
+    @media (min-width: 768px) {
+        .s-section {
+            font-size: 16px;
+            padding: 20px 40px;
+            margin-top: 80px
+        }
+
+        .s-section:last-of-type {
+            margin-bottom: 80px
+        }
+
+        .s-title {
+            margin-bottom: 1.2em
+        }
+
+        .s-title._h1 {
+            font-size: 36px
+        }
+
+        .nps.s-section {
+            padding: 40px
+        }
+
+        .nps__block {
+            margin-bottom: 40px
+        }
+
+        .nps__question {
+            font-size: 20px;
+            margin-bottom: 30px
+        }
+
+        .nps__question .nps__textpiece {
+            display: block
+        }
+
+        .nps__radio {
+            font-size: 24px;
+            margin-right: 20px
+        }
+
+        .nps__legend {
+            font-size: 16px;
+            margin: -10px 0 10px
+        }
+
+        .nps__area {
+            font-size: 18px;
+            border-radius: 15px;
+            padding: 15px
+        }
+
+        .nps__submit {
+            min-width: 240px
+        }
+    }@media (min-width: 992px) {
+    .s-section {
+        font-size: 18px;
+        padding: 0 80px;
+        margin-top: 120px
+    }
+
+    .s-section:last-of-type {
+        margin-bottom: 120px
+    }
+
+    .s-title {
+        margin-bottom: 1.5em
+    }
+
+    .s-title._h1 {
+        font-size: 48px
+    }
+
+    .kv {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center
+    }
+
+    .kv__title.s-title {
+        text-align: left;
+        max-width: 500px;
+        margin: 0
+    }
+
+    .nps.s-section {
+        padding: 80px
+    }
+
+    .nps__block {
+        margin-bottom: 80px
+    }
+
+    .nps__question {
+        font-size: 24px;
+        margin-bottom: 40px
+    }
+
+    .nps__radio {
+        font-size: 28px;
+        margin-right: 36px
+    }
+
+    .nps__legend {
+        font-size: 20px;
+        margin: -20px 0 30px
+    }
+
+    .nps__legend .nps__textpiece {
+        display: inline
+    }
+
+    .nps__area {
+        font-size: 20px;
+        border-radius: 20px;
+        padding: 20px;
+        resize: vertical;
+        min-height: 320px;
+        max-height: 70vh;
+        height: auto
+    }
+}
+}
+@media (max-width: 991px) {
+    .second-section .nps__radio{
+        width: 57px;
+    }
+    .second-section.nps__radios{
+        column-gap: 10px;
+    }
+}
+
+@media (max-width: 400px) {
+    .second-section.nps__radios{
+        column-gap: 10px;
+    }
+    .second-section .nps__radio{
+        width: 39px;
+        font-size: 14px;
+    }
+}
