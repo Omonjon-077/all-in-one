@@ -412,7 +412,7 @@ body {
     }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 425px) {
     .second-section.nps__radios{
         column-gap: 10px;
     }
