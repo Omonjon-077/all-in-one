@@ -22,7 +22,7 @@
     font-style: normal
 }
 
-body {
+.s-section {
     font-family: 'SamsungSharpSans', sans-serif;
 }
 
@@ -118,6 +118,23 @@ body {
         margin-left: -10px
     }
 
+    .nps__radio {
+        margin-top: 0;
+        position: relative;
+    }
+
+    .nps__radio .nps__text{
+        top: -25px;
+        left: 5px;
+        position: absolute;
+        width: max-content;
+        margin: 0 auto;
+    }
+
+    .nps__radio .nps__text.last__num{
+        left: 13px;
+    }
+
     @media (min-width: 721px) {
         .kv {
             background: linear-gradient(to right, rgba(0, 0, 0, .75), rgba(0, 0, 0, 0) 60%), url("https://images.samsung.com/is/image/samsung/assets/ru/cdm/npscdm/kv1_1440_420.png") top center no-repeat
@@ -156,7 +173,7 @@ body {
     }
 
     .nps__question .nps__textpiece {
-        display: inline
+        display: inline;
     }
 
     .nps__legend {
@@ -164,7 +181,8 @@ body {
     }
 
     .nps__legend .nps__textpiece {
-        display: block
+        display: block;
+        font-family: sans-serif;
     }
 
     .nps__radios {
@@ -405,7 +423,7 @@ body {
 }
 @media (max-width: 991px) {
     .second-section .nps__radio{
-        width: 57px;
+        width: 40px;
     }
     .second-section.nps__radios{
         column-gap: 10px;
@@ -414,10 +432,24 @@ body {
 
 @media (max-width: 425px) {
     .second-section.nps__radios{
-        column-gap: 10px;
+        column-gap: 20px;
     }
     .second-section .nps__radio{
-        width: 39px;
-        font-size: 14px;
+        width: 25px;
+        margin-left: 7px;
+    }
+    .second-section .nps__radio .nps__text{
+        font-size: 16px;
+        left: -7px;
+    }
+    .nps__radio {
+        margin-top: 10px;
+    }
+
+    .nps__radio .nps__text.last__num{
+        left: -0px;
+    }
+    .nps__radio::after{
+        margin-top: initial;
     }
 }
