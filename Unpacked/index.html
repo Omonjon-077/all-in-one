@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>Packing</title>
+</head>
+
+<body>
+
+    <!-- START Form -->
+    <section class="uz-handraizer-form">
+        <div class="uhf-wrapper">
+            <div class="uhf-form js-form-common">
+                <h2 class="uhf-title"><a id="reg">Подпишитесь на новые Galaxy!</a></h2>
+                <div class="uhf-title__description">Пожалуйста, введите свои данные, чтобы получать последние обновления
+                </div>
+
+                <div class="uhf-form__body">
+                    <div class="uhf-row uhf-fields uhf-fields--input-text">
+                        <div>
+                            <div class="uhf-input">
+                                <input type="text" name="uhf_name" id="uhf_name"
+                                    class="uhf-input__control js-uhf-input-control js-uhf-input-name">
+                                <label for="uhf_name" class="uhf-input__label">Имя <sup>*</sup>:</label>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="uhf-input">
+                                <input type="email" name="uhf_email" id="uhf_email"
+                                    class="uhf-input__control js-uhf-input-control js-uhf-input-email">
+                                <label for="uhf_email" class="uhf-input__label">E-mail <sup>*</sup>:</label>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="uhf-input uhf-input--phone">
+                                <input type="tel" name="uhf_phone" id="uhf_phone"
+                                    class="uhf-input__control js-uhf-input-control js-uhf-input-phone">
+                                <label for="uhf_phone" class="uhf-input__label">Телефон <sup>*</sup>:</label>
+                                <span class="uhf-input--phone__label">+998</span>
+                            </div>
+                            <script src="https://unpkg.com/imask"></script>
+                        </div>
+                    </div>
+                    <div class="uhf-row">
+                        <div class="uhf-row__title">Каким смартфоном вы пользуетесь?</div>
+                        <div class="uhf-fields">
+                            <div>
+                                <label class="uhf-radio">
+                                    <input type="radio" name="uhf_radio_smartphone" value="Samsung"
+                                        class="uhf-radio__control js-uhf-radio-device"
+                                        data-analityc="uz_ru:unpacked:my device:samsung galaxy">
+                                    <span class="uhf-radio__label">Galaxy</span>
+                                </label>
+                            </div>
+                            <div>
+                                <label class="uhf-radio">
+                                    <input type="radio" name="uhf_radio_smartphone" value="Apple"
+                                        class="uhf-radio__control js-uhf-radio-device"
+                                        data-analityc="uz_ru:unpacked:my device:apple iphone">
+                                    <span class="uhf-radio__label">iPhone</span>
+                                </label>
+                            </div>
+                            <div>
+                                <label class="uhf-radio">
+                                    <input type="radio" name="uhf_radio_smartphone" value="Other"
+                                        class="uhf-radio__control js-uhf-radio-device"
+                                        data-analityc="uz_ru:unpacked:my device:other">
+                                    <span class="uhf-radio__label">Другое</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="uhf-row">
+                        <div class="uhf-row__title">Продукты какой категории вам интересны больше всего?</div>
+                        <div class="uhf-fields">
+                            <div>
+                                <label class="uhf-radio">
+                                    <input type="checkbox" name="uhf_checkbox_category" value="mobile"
+                                        class="uhf-radio__control js-uhf-checkbox-category">
+                                    <span class="uhf-radio__label">Bar Type Phone</span>
+                                </label>
+                            </div>
+                            <div>
+                                <label class="uhf-radio">
+                                    <input type="checkbox" name="uhf_checkbox_category" value="foldable"
+                                        class="uhf-radio__control js-uhf-checkbox-category">
+                                    <span class="uhf-radio__label">Tablet</span>
+                                </label>
+                            </div>
+                            <div>
+                                <label class="uhf-radio">
+                                    <input type="checkbox" name="uhf_checkbox_category" value="tablet"
+                                        class="uhf-radio__control js-uhf-checkbox-category">
+                                    <span class="uhf-radio__label">TV</span>
+                                </label>
+                            </div>
+                            <div>
+                                <label class="uhf-radio">
+                                    <input type="checkbox" name="uhf_checkbox_category" value="smart watch"
+                                        class="uhf-radio__control js-uhf-checkbox-category">
+                                    <span class="uhf-radio__label">Foldable Phone</span>
+                                </label>
+                            </div>
+                            <div>
+                                <label class="uhf-radio">
+                                    <input type="checkbox" name="uhf_checkbox_category" value="buds"
+                                        class="uhf-radio__control js-uhf-checkbox-category">
+                                    <span class="uhf-radio__label">Watch</span>
+                                </label>
+                            </div>
+                            <div>
+                                <label class="uhf-radio">
+                                    <input type="checkbox" name="uhf_checkbox_category" value="buds"
+                                        class="uhf-radio__control js-uhf-checkbox-category">
+                                    <span class="uhf-radio__label">Robot VC</span>
+                                </label>
+                            </div>
+                            <div>
+                                <label class="uhf-radio">
+                                    <input type="checkbox" name="uhf_checkbox_category" value="buds"
+                                        class="uhf-radio__control js-uhf-checkbox-category">
+                                    <span class="uhf-radio__label">Note PC</span>
+                                </label>
+                            </div>
+                            <div>
+                                <label class="uhf-radio">
+                                    <input type="checkbox" name="uhf_checkbox_category" value="buds"
+                                        class="uhf-radio__control js-uhf-checkbox-category">
+                                    <span class="uhf-radio__label">Buds</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="uhf-row">
+                        <div class="uhf-row__title">Какое специальное предложение вы бы хотели получить?</div>
+                        <div class="uhf-fields">
+                            <div>
+                                <label class="uhf-radio">
+                                    <input type="checkbox" name="uhf_checkbox_offers" value="gift with purchase"
+                                        class="uhf-radio__control js-uhf-checkbox-offers">
+                                    <span class="uhf-radio__label">Trade-in</span>
+                                </label>
+                            </div>
+                            <div>
+                                <label class="uhf-radio">
+                                    <input type="checkbox" name="uhf_checkbox_offers" value="discount"
+                                        class="uhf-radio__control js-uhf-checkbox-offers">
+                                    <span class="uhf-radio__label">Storage Upgrade</span>
+                                </label>
+                            </div>
+                            <div>
+                                <label class="uhf-radio">
+                                    <input type="checkbox" name="uhf_checkbox_offers" value="installment"
+                                        class="uhf-radio__control js-uhf-checkbox-offers">
+                                    <span class="uhf-radio__label">Protection Program</span>
+                                </label>
+                            </div>
+                            <div>
+                                <label class="uhf-radio">
+                                    <input type="checkbox" name="uhf_checkbox_offers" value="gifts draw"
+                                        class="uhf-radio__control js-uhf-checkbox-offers">
+                                    <span class="uhf-radio__label">E-Voucher</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="uhf-row">
+                        <div class="uhf-row__title">Какая функция смартфона вас интересует?</div>
+                        <div class="uhf-fields">
+                            <div>
+                                <label class="uhf-radio">
+                                    <input type="checkbox" name="uhf_checkbox_offers" value="gift with purchase"
+                                        class="uhf-radio__control js-uhf-checkbox-offers">
+                                    <span class="uhf-radio__label">Камера</span>
+                                </label>
+                            </div>
+                            <div>
+                                <label class="uhf-radio">
+                                    <input type="checkbox" name="uhf_checkbox_offers" value="discount"
+                                        class="uhf-radio__control js-uhf-checkbox-offers">
+                                    <span class="uhf-radio__label">Фотографии</span>
+                                </label>
+                            </div>
+                            <div>
+                                <label class="uhf-radio">
+                                    <input type="checkbox" name="uhf_checkbox_offers" value="installment"
+                                        class="uhf-radio__control js-uhf-checkbox-offers">
+                                    <span class="uhf-radio__label">Батарея</span>
+                                </label>
+                            </div>
+                            <div>
+                                <label class="uhf-radio">
+                                    <input type="checkbox" name="uhf_checkbox_offers" value="gifts draw"
+                                        class="uhf-radio__control js-uhf-checkbox-offers">
+                                    <span class="uhf-radio__label">Перевод</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="uhf-form__footer">
+                    <div class="uhf-form__footer-row">
+                        <label class="uhf-radio">
+                            <input type="checkbox" name="uhf_radio_legal"
+                                class="uhf-radio__control js-checkbox-subscribe">
+                            <span class="uhf-radio__label"><span class="uhf-privacy-label">Я хочу получать информацию о
+                                    <a href="https://www.samsung.com/uz_ru/info/legal/"
+                                        target="_blank">новинках</a></span></span>
+                        </label>
+                    </div>
+                    <div class="uhf-form__footer-row">
+                        <label class="uhf-radio">
+                            <input type="checkbox" name="uhf_radio_privacy"
+                                class="uhf-radio__control js-checkbox-agree">
+                            <span class="uhf-radio__label"><span class="uhf-privacy-label">Я <a
+                                        href="https://www.samsung.com/uz_uz/info/privacy/#personal_data">ознакомлен
+                                        (-а)</a> и согласен (-на) с правилами и условиями передачи персональных данных.
+                                </span></span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="uhf-form__footer-message">Поля (*) обязательные к заполнению</div>
+
+                <div class="uhf-form__send-button">
+                    <button class="uhf-button js-uhf-button" disabled>Отправить</button>
+                </div>
+
+            </div>
+            <div class="uhf-form js-form-success uhf-hidden">
+                <h2 class="uhf-title">Ура! Благодарим вас за проявленный интерес! <br>Ждем вас 26-ого июля на Galaxy
+                    Unpacked 2023. Смотрите прямой эфир и получите возможность выиграть новый флагман! До встречи!</h2>
+                <div class="uhf-form__send-button">
+                    <a href="https://www.samsung.com/uz_ru/mobile/why-galaxy/" class="uhf-button" target="_blank">Больше
+                        о возможностях Galaxy</a>
+                </div>
+            </div>
+            <div class="uhf-form js-form-cid-show uhf-hidden">
+                <h2 class="ahp-title">Уважаемый зритель, вы получите уведомление о Galaxy Unpacked Live Stream. Спасибо!
+                </h2>
+            </div>
+        </div>
+    </section>
+    <!-- END Form -->
+
+    <script src="main.js"></script>
+</body>
+
+</html>
