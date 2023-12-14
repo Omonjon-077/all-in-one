@@ -205,11 +205,14 @@
     min-width: 1.111em;
     height: 1.111em;
     border: 1px solid var(--uhf-color-grey-dark);
-    border-radius: initial;
+    border-radius: 50%;
     margin-right: .667em;
     background: var(--uhf-color-white) var(--uhf-radio-prop-image) no-repeat 50% .278em;
     background-size: 60% auto;
     transition: all 0.15s ease-out;
+}
+.square .uhf-radio__label::before {
+    border-radius: initial;
 }
 .uhf-radio__control:checked + .uhf-radio__label::before {
     border-color: var(--uhf-color-blue);
