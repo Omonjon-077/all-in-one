@@ -193,15 +193,6 @@
 
 body {
     margin: 0;
-    font-family: var(--bs-body-font-family);
-    font-size: var(--bs-body-font-size);
-    font-weight: var(--bs-body-font-weight);
-    line-height: var(--bs-body-line-height);
-    color: var(--bs-body-color);
-    text-align: var(--bs-body-text-align);
-    background-color: var(--bs-body-bg);
-    -webkit-text-size-adjust: 100%;
-    -webkit-tap-highlight-color: transparent
 }
 
 hr {
@@ -378,7 +369,7 @@ sup {
 
 a {
     color: rgba(var(--bs-link-color-rgb), var(--bs-link-opacity, 1));
-    text-decoration: underline
+    text-decoration: none;
 }
 
 a:hover {
@@ -13730,7 +13721,7 @@ button[aria-expanded^="true"] svg {
 }
 
 .uhf-title {
-    font-size: 2em;
+    font-size: 2.5em;
     font-family: 'SamsungOne', Arial, sans-serif;
     font-weight: 700;
     line-height: 1.2;
@@ -13950,9 +13941,14 @@ button[aria-expanded^="true"] svg {
     text-decoration: none;
     width: 100%;
     max-width: 21.429em;
-    color: var(--uhf-color-white);
-    background-color: var(--uhf-color-grey-dark);
+    background-color: #38342e;
+    color: var(--uhf-color-grey-medium-light);
     transition: all 0.15s ease-out;
+}
+
+.uhf-href-button:hover {
+    background: #948b7a;
+    color: white;
 }
 
 .uhf-button {
@@ -13986,15 +13982,15 @@ button[aria-expanded^="true"] svg {
 }
 
 .uhf-button:disabled {
-    cursor: default;
+    cursor: pointer;
     background-color: #38342e;
     color: var(--uhf-color-grey-medium-light);
 }
 
 @media (hover: hover) {
     .uhf-button:disabled:hover {
-        background-color: initial;
-        color: var(--uhf-color-grey-medium-light);
+        background-color: #948b7a;
+        color: var(--bs-white);
         outline: none !important;
         box-shadow: none !important;
     }
