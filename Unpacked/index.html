@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="main.css">
-    <title>Packing</title>
+    <title>Galaxy Unpacked</title>
 </head>
 
 <body>
@@ -16,18 +16,17 @@
         <div class="uhf-form js-form-common">
             <h2 class="uhf-title"><a id="teg" style="color: #948b7a;">Galaxy AI is coming</a></h2>
             <div class="uhf-title__description" style="margin-top: 10px;">
-                Trailblaze the new era of Al. Unleash whole
-                new levels of creativity, productivity and possibility - starting with the most important device in your
-                life. Your smartphone.
+                Откройте для себя новую эру Al (исскуственного интеллекта). Раскройте совершенно новые уровни
+                творчества, продуктивности и возможностей.
             </div>
-            <div class="uhf-form__footer-message" style="margin-top: 10px;">
-                Epic, just like that
-            </div>
+            <br>
+            <div class="uhf-title__description" style="margin-top: 10px;">Просто эпично</div>
             <div class="uhf-form__send-button d-none">
                 <a class="uhf-href-button js-uhf-button" href="#!">Button</a>
             </div>
             <h2 class="uhf-title" style="margin-top: 100px;"><a id="reg">Подпишитесь на новые Galaxy!</a></h2>
-            <div class="uhf-title__description">Пожалуйста, введите свои данные, чтобы получать последние обновления
+            <div class="uhf-title__description">Заполните форму, присоединитесь к Live-Stream и получите шанс выиграть
+                новый смартфон Galaxy!
             </div>
             <div class="uhf-form__footer-message">Поля (*) обязательные к заполнению</div>
 
@@ -40,32 +39,16 @@
                             <label for="uhf_email" class="uhf-input__label">E-mail <sup>*</sup>:</label>
                         </div>
                     </div>
-                    <div class="d-md-block d-none">
-                        <div class="uhf-input uhf-input--phone d-none">
-                            <input type="tel" name="uhf_phone" id="uhf_phone"
-                                   class="uhf-input__control js-uhf-input-control js-uhf-input-phone">
-                            <label for="uhf_phone" class="uhf-input__label">Телефон <sup>*</sup>:</label>
-                            <span class="uhf-input--phone__label">+998</span>
-                        </div>
-                        <script src="https://unpkg.com/imask"></script>
-                    </div>
                     <div>
                         <div class="uhf-input">
                             <input type="text" name="uhf_surname" id="uhf_surname"
                                    class="uhf-input__control js-uhf-input-control js-uhf-input-name">
-                            <label for="uhf_surname" class="uhf-input__label">Фамилия <sup>*</sup>:</label>
-                        </div>
-                    </div>
-                    <div>
-                        <div class="uhf-input">
-                            <input type="text" name="uhf_name" id="uhf_name"
-                                   class="uhf-input__control js-uhf-input-control js-uhf-input-name">
-                            <label for="uhf_name" class="uhf-input__label">Имя <sup>*</sup>:</label>
+                            <label for="uhf_surname" class="uhf-input__label">ФИО <sup>*</sup>:</label>
                         </div>
                     </div>
                 </div>
                 <div class="uhf-row">
-                    <div class="uhf-row__title">Каким смартфоном вы пользуетесь?</div>
+                    <div class="uhf-row__title">1. Каким смартфоном вы пользуетесь?<sup>*</sup></div>
                     <div class="uhf-fields">
                         <div>
                             <label class="uhf-radio">
@@ -80,7 +63,7 @@
                                 <input type="radio" name="uhf_radio_smartphone" value="Apple"
                                        class="uhf-radio__control js-uhf-radio-device"
                                        data-analityc="uz_ru:unpacked:my device:apple iphone">
-                                <span class="uhf-radio__label">iPhone</span>
+                                <span class="uhf-radio__label">iOS</span>
                             </label>
                         </div>
                         <div>
@@ -94,128 +77,146 @@
                     </div>
                 </div>
                 <div class="uhf-row square">
-                    <div class="uhf-row__title">Продукты какой категории вам интересны больше всего?</div>
+                    <div class="uhf-row__title">2. Какие категории продуктов вам интересны больше всего?<sup>*</sup>
+                    </div>
                     <div class="uhf-fields">
                         <div>
                             <label class="uhf-radio">
-                                <input type="checkbox" name="uhf_checkbox_category" value="mobile"
+                                <input type="checkbox" name="uhf_checkbox_category" value="smartphone"
                                        class="uhf-radio__control js-uhf-checkbox-category">
-                                <span class="uhf-radio__label">Bar Type Phone</span>
+                                <span class="uhf-radio__label">Смартфон</span>
                             </label>
                         </div>
                         <div>
                             <label class="uhf-radio">
                                 <input type="checkbox" name="uhf_checkbox_category" value="foldable"
                                        class="uhf-radio__control js-uhf-checkbox-category">
-                                <span class="uhf-radio__label">Tablet</span>
+                                <span class="uhf-radio__label">Складной смартфон</span>
+                            </label>
+                        </div>
+                        <div>
+                            <label class="uhf-radio">
+                                <input type="checkbox" name="uhf_checkbox_category" value="laptop"
+                                       class="uhf-radio__control js-uhf-checkbox-category">
+                                <span class="uhf-radio__label">Ноутбук</span>
                             </label>
                         </div>
                         <div>
                             <label class="uhf-radio">
                                 <input type="checkbox" name="uhf_checkbox_category" value="tablet"
                                        class="uhf-radio__control js-uhf-checkbox-category">
-                                <span class="uhf-radio__label">TV</span>
+                                <span class="uhf-radio__label">Планшет</span>
                             </label>
                         </div>
                         <div>
                             <label class="uhf-radio">
-                                <input type="checkbox" name="uhf_checkbox_category" value="smart watch"
+                                <input type="checkbox" name="uhf_checkbox_category" value="watch"
                                        class="uhf-radio__control js-uhf-checkbox-category">
-                                <span class="uhf-radio__label">Foldable Phone</span>
+                                <span class="uhf-radio__label">Часы</span>
                             </label>
                         </div>
                         <div>
                             <label class="uhf-radio">
-                                <input type="checkbox" name="uhf_checkbox_category" value="buds"
+                                <input type="checkbox" name="uhf_checkbox_category" value="earphones"
                                        class="uhf-radio__control js-uhf-checkbox-category">
-                                <span class="uhf-radio__label">Watch</span>
+                                <span class="uhf-radio__label">Наушники</span>
                             </label>
                         </div>
                         <div>
                             <label class="uhf-radio">
-                                <input type="checkbox" name="uhf_checkbox_category" value="buds"
+                                <input type="checkbox" name="uhf_checkbox_category" value="TV"
                                        class="uhf-radio__control js-uhf-checkbox-category">
-                                <span class="uhf-radio__label">Robot VC</span>
+                                <span class="uhf-radio__label">ТВ</span>
                             </label>
                         </div>
                         <div>
                             <label class="uhf-radio">
-                                <input type="checkbox" name="uhf_checkbox_category" value="buds"
+                                <input type="checkbox" name="uhf_checkbox_category" value="robot-vacuum-cleaner"
                                        class="uhf-radio__control js-uhf-checkbox-category">
-                                <span class="uhf-radio__label">Note PC</span>
-                            </label>
-                        </div>
-                        <div>
-                            <label class="uhf-radio">
-                                <input type="checkbox" name="uhf_checkbox_category" value="buds"
-                                       class="uhf-radio__control js-uhf-checkbox-category">
-                                <span class="uhf-radio__label">Buds</span>
+                                <span class="uhf-radio__label">Робот-пылесос</span>
                             </label>
                         </div>
                     </div>
                 </div>
                 <div class="uhf-row square">
-                    <div class="uhf-row__title">Какое специальное предложение вы бы хотели получить?</div>
+                    <div class="uhf-row__title">3. Какое специальное предложение вы бы хотели получить?<sup>*</sup>
+                    </div>
                     <div class="uhf-fields">
                         <div>
                             <label class="uhf-radio">
-                                <input type="checkbox" name="uhf_checkbox_offers" value="gift with purchase"
+                                <input type="checkbox" name="uhf_checkbox_offers" value="memory-increase"
+                                       class="uhf-radio__control js-uhf-checkbox-offers">
+                                <span class="uhf-radio__label">Увеличение объема хранилища</span>
+                            </label>
+                        </div>
+                        <div>
+                            <label class="uhf-radio">
+                                <input type="checkbox" name="uhf_checkbox_offers" value="extra gift"
+                                       class="uhf-radio__control js-uhf-checkbox-offers">
+                                <span class="uhf-radio__label">Дополнительный подарок</span>
+                            </label>
+                        </div>
+                        <div>
+                            <label class="uhf-radio">
+                                <input type="checkbox" name="uhf_checkbox_offers"
+                                       value="protection program Samsung Care++"
+                                       class="uhf-radio__control js-uhf-checkbox-offers">
+                                <span class="uhf-radio__label">Программная Защитa Samsung Care+</span>
+                            </label>
+                        </div>
+                        <div>
+                            <label class="uhf-radio">
+                                <input type="checkbox" name="uhf_checkbox_offers" value="trade-in"
                                        class="uhf-radio__control js-uhf-checkbox-offers">
                                 <span class="uhf-radio__label">Trade-in</span>
                             </label>
                         </div>
                         <div>
                             <label class="uhf-radio">
-                                <input type="checkbox" name="uhf_checkbox_offers" value="discount"
-                                       class="uhf-radio__control js-uhf-checkbox-offers">
-                                <span class="uhf-radio__label">Storage Upgrade</span>
-                            </label>
-                        </div>
-                        <div>
-                            <label class="uhf-radio">
                                 <input type="checkbox" name="uhf_checkbox_offers" value="installment"
                                        class="uhf-radio__control js-uhf-checkbox-offers">
-                                <span class="uhf-radio__label">Protection Program</span>
+                                <span class="uhf-radio__label">Рассрочка 0-0-12</span>
                             </label>
                         </div>
                         <div>
                             <label class="uhf-radio">
-                                <input type="checkbox" name="uhf_checkbox_offers" value="gifts draw"
+                                <input type="checkbox" name="uhf_checkbox_offers" value="e-vaucher"
                                        class="uhf-radio__control js-uhf-checkbox-offers">
-                                <span class="uhf-radio__label">E-Voucher</span>
+                                <span class="uhf-radio__label">E-ваучер</span>
                             </label>
                         </div>
                     </div>
                 </div>
                 <div class="uhf-row square">
-                    <div class="uhf-row__title">Какая функция смартфона вас интересует?</div>
+                    <div class="uhf-row__title">4. Какие функции AI (искусственного интеллекта) были бы вам наиболее
+                        полезны и интересны? <sup>*</sup></div>
                     <div class="uhf-fields">
                         <div>
                             <label class="uhf-radio">
-                                <input type="checkbox" name="uhf_checkbox_offers" value="gift with purchase"
-                                       class="uhf-radio__control js-uhf-checkbox-offers">
+                                <input type="checkbox" name="uhf_checkbox_functionalities" value="camera"
+                                       class="uhf-radio__control js-uhf-checkbox-functionalities">
                                 <span class="uhf-radio__label">Камера</span>
                             </label>
                         </div>
                         <div>
                             <label class="uhf-radio">
-                                <input type="checkbox" name="uhf_checkbox_offers" value="discount"
-                                       class="uhf-radio__control js-uhf-checkbox-offers">
-                                <span class="uhf-radio__label">Фотографии</span>
-                            </label>
-                        </div>
-                        <div>
-                            <label class="uhf-radio">
-                                <input type="checkbox" name="uhf_checkbox_offers" value="installment"
-                                       class="uhf-radio__control js-uhf-checkbox-offers">
-                                <span class="uhf-radio__label">Батарея</span>
-                            </label>
-                        </div>
-                        <div>
-                            <label class="uhf-radio">
-                                <input type="checkbox" name="uhf_checkbox_offers" value="gifts draw"
-                                       class="uhf-radio__control js-uhf-checkbox-offers">
+                                <input type="checkbox" name="uhf_checkbox_functionalities" value="translation"
+                                       class="uhf-radio__control js-uhf-checkbox-functionalities">
                                 <span class="uhf-radio__label">Перевод</span>
+                            </label>
+                        </div>
+                        <div>
+                            <label class="uhf-radio">
+                                <input type="checkbox" name="uhf_checkbox_functionalities" value="search"
+                                       class="uhf-radio__control js-uhf-checkbox-functionalities">
+                                <span class="uhf-radio__label">Поиск</span>
+                            </label>
+                        </div>
+                        <div>
+                            <label class="uhf-radio">
+                                <input type="checkbox" name="uhf_checkbox_functionalities" value="photo-editing"
+                                       class="uhf-radio__control js-uhf-checkbox-functionalities">
+                                <span class="uhf-radio__label">Редактирование фотографий</span>
                             </label>
                         </div>
                     </div>
@@ -244,7 +245,7 @@
                 </div>
             </div>
             <div class="uhf-form__send-button">
-                <button class="uhf-button js-uhf-button" disabled>Отправить</button>
+                <button class="uhf-button js-uhf-button js-uhf-button-sbt" disabled>Отправить</button>
             </div>
             <h2 class="uhf-title" style="margin-top: 100px;"><a id="seg">Вопросы и ответы</a></h2>
             <div class="mt-4 mt-sm-5">
@@ -254,8 +255,8 @@
                             <button class="accordion-button text-white fs-7 fw-bold collapsed bg-transparent box-shadow-none px-0"
                                     type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne"
                                     aria-expanded="false" aria-controls="flush-collapseOne">
-                                Lorem ipsum dolor sit amet.
-                                <svg class="ms-auto" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                <span>Что такое Samsung Galaxy Unpacked?</span>
+                                <svg class="ms-auto" xmlns="http://www.w3.org/2000/svg"
                                      viewBox="0 0 24 24"
                                      style="fill: rgba(255, 255, 255, 1);">
                                     <path d="M16.293 9.293 12 13.586 7.707 9.293l-1.414 1.414L12 16.414l5.707-5.707z"></path>
@@ -265,9 +266,9 @@
                         <div id="flush-collapseOne" class="accordion-collapse bg-transparent collapse border-0"
                              data-bs-parent="#accordionFlushExample">
                             <div class="accordion-body text-white fw-normal fs-7 px-0 border-0">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab animi assumenda debitis
-                                iste itaque iusto labore nam natus, non perspiciatis! Accusamus ad alias doloremque enim
-                                eveniet pariatur praesentium, quisquam tempore.
+                                Samsung Galaxy Unpacked — мероприятие, которое проводится два раза в год. Во время
+                                мероприятия Galaxy Unpacked компания Samsung демонстрирует новые гаджеты и знакомит
+                                миллионы поклонников со всего мира с последними обновлениями своих устройств.
                             </div>
                         </div>
                     </div>
@@ -276,8 +277,8 @@
                             <button class="accordion-button text-white fs-7 fw-bold collapsed bg-transparent box-shadow-none px-0"
                                     type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo"
                                     aria-expanded="false" aria-controls="flush-collapseTwo">
-                                Lorem ipsum dolor sit amet.
-                                <svg class="ms-auto" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                <span> Когда состоится прямая трансляция Samsung Galaxy Unpacked и где я могу посмотреть?</span>
+                                <svg class="ms-auto" xmlns="http://www.w3.org/2000/svg"
                                      viewBox="0 0 24 24"
                                      style="fill: rgba(255, 255, 255, 1);">
                                     <path d="M16.293 9.293 12 13.586 7.707 9.293l-1.414 1.414L12 16.414l5.707-5.707z"></path>
@@ -287,12 +288,8 @@
                         <div id="flush-collapseTwo" class="accordion-collapse bg-transparent collapse border-0"
                              data-bs-parent="#accordionFlushExample">
                             <div class="accordion-body text-white fw-normal fs-7 px-0 border-0">Nunc duis id aenean
-                                gravida
-                                tincidunt eu, tempor ullamcorper. Viverra aliquam arcu, viverra et, cursus. Aliquet
-                                pretium cursus adipiscing gravida et consequat lobortis arcu velit. Nibh pharetra
-                                fermentum duis accumsan lectus non. Massa cursus molestie lorem scelerisque
-                                pellentesque. Nisi, enim, arcu purus gravida adipiscing euismod montes, duis
-                                egestas. Vehicula eu etiam quam tristique tincidunt suspendisse ut consequat.
+                                Прямая трансляция Samsung Galaxy Unpacked состоится на официальном канале Samsung
+                                Uzbekistan в Youtube 17.01.2024 в 23:00 по Ташкентскому времени.
                             </div>
                         </div>
                     </div>
@@ -301,8 +298,8 @@
                             <button class="accordion-button text-white fs-7 fw-bold collapsed bg-transparent box-shadow-none px-0"
                                     type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree"
                                     aria-expanded="false" aria-controls="flush-collapseThree">
-                                Lorem ipsum dolor sit amet.
-                                <svg class="ms-auto" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                <span> Будет ли розыгрыш подарков во время прямой трансляции Samsung Galaxy Unpacked?</span>
+                                <svg class="ms-auto" xmlns="http://www.w3.org/2000/svg"
                                      viewBox="0 0 24 24"
                                      style="fill: rgba(255, 255, 255, 1);">
                                     <path d="M16.293 9.293 12 13.586 7.707 9.293l-1.414 1.414L12 16.414l5.707-5.707z"></path>
@@ -312,24 +309,44 @@
                         <div id="flush-collapseThree" class="accordion-collapse bg-transparent collapse border-0"
                              data-bs-parent="#accordionFlushExample">
                             <div class="accordion-body text-white fw-normal fs-7 px-0 border-0">Nunc duis id aenean
-                                gravida
-                                tincidunt eu, tempor ullamcorper. Viverra aliquam arcu, viverra et, cursus. Aliquet
-                                pretium cursus adipiscing gravida et consequat lobortis arcu velit. Nibh pharetra
-                                fermentum duis accumsan lectus non. Massa cursus molestie lorem scelerisque
-                                pellentesque. Nisi, enim, arcu purus gravida adipiscing euismod montes, duis
-                                egestas. Vehicula eu etiam quam tristique tincidunt suspendisse ut consequat.
+                                Да, в период прямой трансляции Samsung Galaxy Unpacked участнику необходимо угадать
+                                секретное кодовое слово, которое будет зашифровано во время проведения трансляции.
+                                Главный приз - новый гаджет Galaxy.
                             </div>
                         </div>
                     </div>
+                    <div class="accordion-item bg-transparent border-bottom-0">
+                        <h2 class="accordion-header border-bottom">
+                            <button class="accordion-button text-white fs-7 fw-bold collapsed bg-transparent box-shadow-none px-0"
+                                    type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree"
+                                    aria-expanded="false" aria-controls="flush-collapseThree">
+                                <span>Когда и где будут определяться победители розыгрыша во время прямой трансляции Samsung
+                                    Galaxy Unpacked?</span>
+                                <svg class="ms-auto" xmlns="http://www.w3.org/2000/svg"
+                                     viewBox="0 0 24 24"
+                                     style="fill: rgba(255, 255, 255, 1);">
+                                    <path d="M16.293 9.293 12 13.586 7.707 9.293l-1.414 1.414L12 16.414l5.707-5.707z"></path>
+                                </svg>
+                            </button>
+                        </h2>
+                        <div id="flush-collapseFour" class="accordion-collapse bg-transparent collapse border-0"
+                             data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body text-white fw-normal fs-7 px-0 border-0">Nunc duis id aenean
+                                Победитель будет определен c помощью рандомайзера 19 января 2024 года в 19:00 по
+                                Ташкентскому времени на официальной странице Samsung Uzbekistan в Инстаграм.
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
             </div>
             <div class="uhf-form__send-button">
-                <a class="uhf-href-button js-uhf-button" href="#!">Отправить</a>
+                <a class="uhf-href-button js-uhf-button" href="#!">Посмотреть полные правлила</a>
             </div>
         </div>
         <div class="uhf-form js-form-success uhf-hidden">
-            <h2 class="uhf-title">Ура! Благодарим вас за проявленный интерес! <br>Ждем вас 26-ого июля на Galaxy
-                Unpacked 2023. Смотрите прямой эфир и получите возможность выиграть новый флагман! До встречи!</h2>
+            <h2 class="uhf-title">Ура! Благодарим вас за проявленный интерес! <br>Ждем вас 17-ого января на Galaxy
+                Unpacked 2024. Смотрите прямой эфир и получите возможность выиграть новый флагман! До встречи!</h2>
             <div class="uhf-form__send-button">
                 <a href="https://www.samsung.com/uz_ru/mobile/why-galaxy/" class="uhf-button" target="_blank">Больше
                     о возможностях Galaxy</a>

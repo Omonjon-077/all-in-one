@@ -1,10 +1,5 @@
 @charset "UTF-8";
 
-/*!
- * Bootstrap  v5.3.0-alpha1 (https://getbootstrap.com/)
- * Copyright 2011-2022 The Bootstrap Authors
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
- */
 :root,
 [data-bs-theme=light] {
     --bs-blue: #165AB7;
@@ -305,7 +300,8 @@ address {
 
 ol,
 ul {
-    padding-left: 2rem
+    padding: 0 !important;
+    margin: 0 !important;
 }
 
 dl,
@@ -13644,9 +13640,6 @@ fieldset:disabled .btn {
     }
 }
 
-/*# sourceMappingURL=bootstrap.min.css.map */
-
-
 .accordion-button::after {
     display: none;
     display: none;
@@ -13701,6 +13694,7 @@ button[aria-expanded^="true"] svg {
     padding: 6.333em 0;
     max-width: 1440px;
     margin: 0 auto;
+    --width-arrow:24px;
 }
 
 .uz-handraizer-form *, .uz-handraizer-form *::before, .uz-handraizer-form *::after {
@@ -13777,6 +13771,13 @@ button[aria-expanded^="true"] svg {
 .uhf-fields--input-textarea {
     grid-template-columns: 1fr;
     grid-gap: 0 0;
+}
+.accordion-button span {
+    width: calc(100% - var(--width-arrow)) !important;
+}
+.accordion-button svg {
+    width:var(--width-arrow) !important;
+    height: auto !important;
 }
 
 .uhf-input {
@@ -13887,7 +13888,7 @@ button[aria-expanded^="true"] svg {
     font-size: var(--uhf-based-font-size);
     display: inline-flex;
     justify-content: flex-start;
-    align-items: center;
+    align-items: flex-start;
 }
 
 .uhf-radio__label a {
@@ -13956,6 +13957,7 @@ button[aria-expanded^="true"] svg {
     justify-content: center;
     align-items: center;
     cursor: pointer;
+    border: none;
     outline: none !important;
     box-shadow: none !important;
     font-size: var(--uhf-button-prop-font-size);
@@ -13965,8 +13967,12 @@ button[aria-expanded^="true"] svg {
     width: 100%;
     max-width: 21.429em;
     color: var(--uhf-color-white);
-    background-color: transparent;
-    transition: all 0.15s ease-out;
+    background-color: #38342e;
+    transition: all .4s ease-out;
+}
+
+.uhf-button:hover {
+    background-color: #38342e;
 }
 
 .uhf-button:focus, .uhf-button:active {
@@ -13977,7 +13983,7 @@ button[aria-expanded^="true"] svg {
 @media (hover: hover) {
     .uhf-button:hover {
         color: var(--uhf-color-white);
-        background-color: #38342e;
+        background-color: #948b7a;
     }
 }
 
@@ -13989,8 +13995,8 @@ button[aria-expanded^="true"] svg {
 
 @media (hover: hover) {
     .uhf-button:disabled:hover {
-        background-color: #948b7a;
-        color: var(--bs-white);
+        background-color: #2d2923;
+        color: var(--uhf-color-grey-medium-light);
         outline: none !important;
         box-shadow: none !important;
     }
@@ -14029,8 +14035,12 @@ button[aria-expanded^="true"] svg {
         --uhf-based-gap: 1.667vw;
     }
 
+    .uhf-row.uhf-fields.uhf-fields--input-text .uhf-input {
+        width: 77% !important;
+    }
+
     .uhf-fields--input-text {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(1, 1fr);
     }
 }
 
@@ -14043,6 +14053,25 @@ button[aria-expanded^="true"] svg {
 
 @media (max-width: 450px) {
     .uz-handraizer-form {
-        background: url("./bg-mb.jpg") no-repeat center/cover;
+        background: url("bg-mb.jpg") no-repeat center/cover;
     }
+
+    .uhf-form.js-form-common {
+        width: 90% !important;
+    }
+
+    .uhf-row__title {
+        padding-right: 25px;
+    }
+    .uhf-row.uhf-fields.uhf-fields--input-text {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .uhf-fields {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+.breadcrumb  {
+    margin-bottom: 0 !important;
 }
