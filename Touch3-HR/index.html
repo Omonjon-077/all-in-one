@@ -214,12 +214,6 @@
 </div>
 
 <div id="wrapper" class="wrapper-color" style="background-color:#F5F5F5;" align="center">
-    <div class="c-preHeader"
-         style="display: none !important; visibility: hidden; opacity: 0; color: #F5F5F5; height: 0; width: 0; font-size: 0; line-height: 0">
-        <!-- setting: pre-header -->
-
-        &nbsp;
-    </div>
     <table id="letter-wrapper" width="600" align="center" class="container" cellpadding="0" cellspacing="0" border="0"
            style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px;">
         <tbody>
@@ -477,7 +471,8 @@
                                                 <p style="Margin:0;height:10px;line-height:10px">&nbsp;</p>
                                                 <td class="float-sm" width="10.5%">&nbsp;</td>
                                                 <td class="float-lg" width="25%" align="center" valign="center">
-                                                    <p id="hours" style="Margin:0; font-family: Inter, sans-serif;font-weight: bold;font-size: 35px; line-height:35px;border-radius: 7px; color:white;padding: 10px 20px;border: 1px solid whitesmoke">
+                                                    <p id="hours"
+                                                       style="Margin:0; font-family: Inter, sans-serif;font-weight: bold;font-size: 35px; line-height:35px;border-radius: 7px; color:white;padding: 10px 20px;border: 1px solid whitesmoke">
                                                         25
                                                     </p>
                                                     <p style="Margin:0;height:10px;line-height:10px">&nbsp;</p>
@@ -489,19 +484,21 @@
 
                                                 </td>
                                                 <td class="float-lg" width="25%" align="center" valign="center">
-                                                    <p id="minutes" style="Margin:0; font-family: Inter, sans-serif;font-weight: bold;font-size: 35px; line-height:35px;border-radius: 7px; color:white;padding: 10px 20px;border: 1px solid whitesmoke">
+                                                    <p id="minutes"
+                                                       style="Margin:0; font-family: Inter, sans-serif;font-weight: bold;font-size: 35px; line-height:35px;border-radius: 7px; color:white;padding: 10px 20px;border: 1px solid whitesmoke">
                                                         25
                                                     </p>
                                                     <p style="Margin:0;height:10px;line-height:10px">&nbsp;</p>
                                                     <p style="Margin:0; font-family: Inter, sans-serif; font-size:22px; line-height:22px; color:#b8b8b8; font-weight: normal;">
-                                                       MIN
+                                                        MIN
                                                     </p>
                                                 </td>
                                                 <td class="float-lg" width="2%" align="center" valign="center">
 
                                                 </td>
                                                 <td class="float-lg" width="25%" align="center" valign="center">
-                                                    <p id="seconds" style="Margin:0; font-family: Inter, sans-serif;font-weight: bold;font-size: 35px; line-height:35px;border-radius: 7px; color:white;padding: 10px 20px;border: 1px solid whitesmoke">
+                                                    <p id="seconds"
+                                                       style="Margin:0; font-family: Inter, sans-serif;font-weight: bold;font-size: 35px; line-height:35px;border-radius: 7px; color:white;padding: 10px 20px;border: 1px solid whitesmoke">
                                                         25
                                                     </p>
                                                     <p style="Margin:0;height:10px;line-height:10px">&nbsp;</p>
@@ -682,7 +679,8 @@
                     </tbody>
                 </table>
                 <!---------------------------------------------- /block 4 text 3  ----------------------------------------------------------->
-
+            </td>
+        </tr>
         <tr>
             <td style="mso-line-height-rule:exactly;background-color: #ffffff; padding-top: 0px; padding-bottom: 0px;">
                 <table bgcolor="black" cellpadding="0" cellspacing="0" border="0">
@@ -799,11 +797,8 @@
                             </table>
                         </td>
                     </tr>
+                </table>
         </tbody>
-    </table>
-    </td>
-    </tr>
-    </tbody>
     </table>
 </div>
 <script>
@@ -823,6 +818,7 @@
             'totalHours': totalHours
         };
     }
+
     function initializeClock(id, endtime) {
         let hoursSpan = document.querySelector("#hours");
         let minutesSpan = document.querySelector("#minutes");
@@ -834,6 +830,7 @@
             minutesSpan.innerHTML = ("0" + t.minutes).slice(-2);
             secondsSpan.innerHTML = ("0" + t.seconds).slice(-2);
         }
+
         updateClock();
         let timeinterval = setInterval(updateClock, 1000);
     }
