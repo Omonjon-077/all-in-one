@@ -13667,8 +13667,7 @@ button[aria-expanded^="true"] svg {
     background-color: var(--bs-white);
     height: 2px;
 }
-
-.uz-handraizer-form {
+.uz-handraizer-form-cnt {
     --uhf-color-white: hsl(0, 0%, 100%);
     --uhf-color-light: hsl(0, 0%, 96.1%);
     --uhf-color-black: hsl(0, 0%, 0%);
@@ -13687,14 +13686,30 @@ button[aria-expanded^="true"] svg {
     --uhf-based-width: 1440px;
     --uhf-based-gap: 6.667vw;
     --uhf-radio-prop-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAAOCAYAAAAi2ky3AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAACMSURBVHgBpZANEYAgDEYXxQhEsQFEoIE20AbahChGIMKEE0+dMP7eHXccbI99AHSAiAYvJmjFNW/4YKEF17jgFwO1+BhEcrg11Dh4iduIkFdlJJqdJBzc6IREEon1A9AiS4okuRf4R8ReSxaGO/qQAia/iow+ktjJ6LnPpMxQii/uljCyFVp5yfbSnhMOOXzFmF2O6QAAAABJRU5ErkJggg==');
-    font-size: var(--uhf-based-font-size);
+
     font-family: 'SamsungOne', Arial, sans-serif;
     box-sizing: border-box;
-    background: url("bg-pc.jpg") no-repeat center/cover;
+
     padding: 6.333em 0;
     max-width: 1440px;
     margin: 0 auto;
     --width-arrow:24px;
+    position: relative;
+    overflow: hidden;
+}
+.uz-handraizer-form {
+    font-size: var(--uhf-based-font-size);
+}
+.uz-handraizer-form-bg{
+    background: url("https://images.samsung.com/is/image/samsung/assets/uz_ru/unpacked/jan2024/bg-pc.jpg") no-repeat center/cover;
+    max-width: 1440px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 2500px;
+    height: 100%;
+    z-index: -1;
 }
 
 .uz-handraizer-form *, .uz-handraizer-form *::before, .uz-handraizer-form *::after {
@@ -13715,8 +13730,8 @@ button[aria-expanded^="true"] svg {
 }
 
 .uhf-title {
-    font-size: 2.5em;
-    font-family: 'SamsungOne', Arial, sans-serif;
+    font-size: 2em;
+    font-family: 'SamsungSharpSans',arial,sans-serif;
     font-weight: 700;
     line-height: 1.2;
     margin: 0;
@@ -14052,8 +14067,8 @@ button[aria-expanded^="true"] svg {
 }
 
 @media (max-width: 450px) {
-    .uz-handraizer-form {
-        background: url("bg-mb.jpg") no-repeat center/cover;
+    .uz-handraizer-form-bg {
+        background: url("https://images.samsung.com/is/image/samsung/assets/uz_ru/unpacked/jan2024/bg-mb.jpg") no-repeat center/cover;
     }
 
     .uhf-form.js-form-common {

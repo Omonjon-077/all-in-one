@@ -68,19 +68,31 @@ const uhfAnalyticSendingTag = {
 
 const UzUnpackedForm = () => {
     const inputControls = document.querySelectorAll('.js-uhf-input-control');
+    const inputControlsRadio = document.querySelectorAll('.uhf-radio__control');
     const inputControlsName = document.querySelector('.js-uhf-input-name');
     const inputControlsEmail = document.querySelector('.js-uhf-input-email');
-    const inputControlsPhone = document.querySelector('.js-uhf-input-phone');
-    const submitButton = document.querySelector('.js-uhf-button');
-    const checkboxSubscribe = document.querySelector('.js-checkbox-subscribe');
+    // const inputControlsPhone = document.querySelector('.js-uhf-input-phone');
+    const submitButton = document.querySelector('.js-uhf-button-sbt');
+    // const checkboxSubscribe = document.querySelector('.js-checkbox-subscribe');
     const checkboxAgree = document.querySelector('.js-checkbox-agree');
     const formCommon = document.querySelector('.js-form-common');
     const formSuccess = document.querySelector('.js-form-success');
 
     const validateEmail = (email) => /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(String(email).toLowerCase());
-    const formSuccessed = () => inputControlsName.value && inputControlsPhone.value.length === 13 && validateEmail(inputControlsEmail.value) && checkboxAgree.checked ? submitButton.removeAttribute('disabled') : submitButton.setAttribute('disabled', 'disabled');
+    const validateFio = (fio) => /^([^0-9]*)$/.test(fio);
+    const formSuccessed = () => inputControlsName.value &&
+    validateFio(inputControlsName.value) &&
+    validateEmail(inputControlsEmail.value) &&
+    checkboxAgree.checked &&
+    isCheckboxedQuestionAnswered('js-uhf-checkbox-category') &&
+    isCheckboxedQuestionAnswered('js-uhf-checkbox-offers') &&
+    isCheckboxedQuestionAnswered('js-uhf-checkbox-functionalities')
+        ?
+        submitButton.removeAttribute('disabled')
+        :
+        submitButton.setAttribute('disabled', 'disabled');
 
-    const URL = 'https://ssl.samsung.ru/localCMS/registrator/RegistrateForm';
+    const URL = 'https://products.samsung.uz/api/newsletter/subscribe';
     const queryString = window.location.search;
     const urlParams = new URLSearchParams(queryString);
 
@@ -88,9 +100,37 @@ const UzUnpackedForm = () => {
         mask: '(00)000-00-00',
     };
 
-    const maskPhone = IMask(inputControlsPhone, maskOptionsPhone);
+    // const maskPhone = IMask(inputControlsPhone, maskOptionsPhone);
+    function isCheckboxedQuestionAnswered(checkboxClass)
+    {
+        const selected = document.querySelectorAll('.'+checkboxClass+':checked');
+        return selected.length !== 0;
+    }
 
     inputControls.forEach(item => {
+        item.addEventListener('blur', event => {
+            const _this = event.currentTarget;
+            _this.value !== '' ? _this.classList.add('uhf-input__control--focus') : _this.classList.remove('uhf-input__control--focus');
+
+            switch (_this.type) {
+                case 'tel':
+                    if(_this.value.length !== 13) _this.classList.add('uhf-input__control--invalid');
+                    break;
+                case 'email':
+                    if(!validateEmail(_this.value)) _this.classList.add('uhf-input__control--invalid');
+                    break;
+                default:
+                    if(!_this.value) _this.classList.add('uhf-input__control--invalid');
+                    break;
+            }
+        });
+        item.addEventListener('input', event => {
+            event.currentTarget.classList.remove('uhf-input__control--invalid');
+            formSuccessed()
+        });
+    });
+
+    inputControlsRadio.forEach(item => {
         item.addEventListener('blur', event => {
             const _this = event.currentTarget;
             _this.value !== '' ? _this.classList.add('uhf-input__control--focus') : _this.classList.remove('uhf-input__control--focus');
@@ -119,11 +159,14 @@ const UzUnpackedForm = () => {
         const thisDate = new Date();
         const categorySelected = document.querySelectorAll('.js-uhf-checkbox-category:checked');
         const offersSelected = document.querySelectorAll('.js-uhf-checkbox-offers:checked');
+        const functionalitiesSelected = document.querySelectorAll('.js-uhf-checkbox-functionalities:checked');
         let insterstingCategories = '';
         let insterstingCategoriesAnalityc = ''
         let insterstingOffers = '';
         let insterstingOffersAnalityc = ''
-        
+        let insterstingFunctionalities = '';
+        let insterstingFunctionalitiesAnalityc = '';
+
 
         if (event.currentTarget.getAttribute('disabled') === null) {
 
@@ -142,20 +185,30 @@ const UzUnpackedForm = () => {
                     insterstingCategoriesAnalityc += item.value + ':'
                 })
                 insterstingOffers = insterstingOffers.slice(0, -1);
-                insterstingOffersAnalityc = insterstingOffersAnalityc.slice(0, -1); 
+                insterstingOffersAnalityc = insterstingOffersAnalityc.slice(0, -1);
+            }
+
+            if(functionalitiesSelected.length !== 0) {
+                functionalitiesSelected.forEach(item => {
+                    insterstingFunctionalities += item.value + '|'
+                    insterstingFunctionalitiesAnalityc += item.value + ':'
+                })
+                insterstingFunctionalities = insterstingFunctionalities.slice(0, -1);
+                insterstingFunctionalitiesAnalityc = insterstingFunctionalitiesAnalityc.slice(0, -1);
             }
 
             const sendData = {
-                CampaignCode : 'BQ5UZ',
-                Email: inputControlsEmail.value,
-                FirstName: inputControlsName.value,
-                Tel: inputControlsPhone.value,
-                Field1: document.querySelector('.js-uhf-radio-device:checked') ? document.querySelector('.js-uhf-radio-device:checked').value : '',
-                Field2: insterstingCategories,
-                Field3: insterstingOffers,
-                SubscribeEmail: checkboxSubscribe.checked,
-                TimeOffset: -thisDate.getTimezoneOffset() / 60,
-                Cid: urlParams.get('cid') ?? 'direct'
+                campaignCode : 'BQ5UZ',
+                email: inputControlsEmail.value,
+                name: inputControlsName.value,
+                phone_in_use: document.querySelector('.js-uhf-radio-device:checked') ? document.querySelector('.js-uhf-radio-device:checked').value : '',
+                interested_category: insterstingCategories,
+                interested_functionality: insterstingFunctionalities,
+                special_offer: insterstingOffers,
+                // wants_to_receive_news: checkboxSubscribe.checked,
+                time_offset: -thisDate.getTimezoneOffset() / 60,
+                cid: urlParams.get('cid') ?? 'direct',
+                url: window.location.href
             }
 
             event.currentTarget.setAttribute('disabled', 'disabled');
@@ -165,13 +218,17 @@ const UzUnpackedForm = () => {
                 type: 'POST',
                 dataType: "json",
                 traditional: true,
-                data: sendData,
+                data: JSON.stringify(sendData),
+                contentType: "application/json",
+                headers:{
+                    'Authorization': 'Bearer d0376ebe6bf19bb9f798d17196aeacd79d38c870223c8c11a86eee8683414619'
+                },
                 success: (data) => {
                     if (data['Result'] === 'OK' || (data['Result'] === 'ERROR' && data['ErrorCode'] === 'DUPL_SN_USER')) {
                         formCommon.classList.add('uhf-hidden');
                         formSuccess.classList.remove('uhf-hidden');
                         window.scrollTo({
-                            top: document.querySelector('.textblock.bg-black.text-center.text-mo-center').offsetTop + (document.querySelector('.textblock.bg-black.text-center.text-mo-center').getBoundingClientRect().height / 2),
+                            top: document.querySelector('#should-scroll-to-this-elem').offsetTop + (document.querySelector('#should-scroll-to-this-elem').getBoundingClientRect().height / 2),
                             behavior: 'smooth'
                         });
                     }
@@ -182,10 +239,10 @@ const UzUnpackedForm = () => {
                             sendOmniEventUzUnpackedFormSendingOption(uhfAnalyticSendingTag.name)
                             sendOmniEventUzUnpackedFormSendingOption('delete', 'delete')
                         }
-                        if(inputControlsPhone.value) {
-                            sendOmniEventUzUnpackedFormSendingOption(uhfAnalyticSendingTag.tel)
-                            sendOmniEventUzUnpackedFormSendingOption('delete', 'delete')
-                        }
+                        // if(inputControlsPhone.value) {
+                        //     sendOmniEventUzUnpackedFormSendingOption(uhfAnalyticSendingTag.tel)
+                        //     sendOmniEventUzUnpackedFormSendingOption('delete', 'delete')
+                        // }
                         if(inputControlsEmail.value) {
                             sendOmniEventUzUnpackedFormSendingOption(uhfAnalyticSendingTag.email)
                             sendOmniEventUzUnpackedFormSendingOption('delete', 'delete')
@@ -200,6 +257,10 @@ const UzUnpackedForm = () => {
                         }
                         if(offersSelected.length !== 0) {
                             sendOmniEventUzUnpackedFormSendingOption('uz_ru:unpacked:offers:' + insterstingOffersAnalityc)
+                            sendOmniEventUzUnpackedFormSendingOption('delete', 'delete')
+                        }
+                        if(offersSelected.length !== 0) {
+                            sendOmniEventUzUnpackedFormSendingOption('uz_ru:unpacked:functionalities:' + insterstingFunctionalities)
                             sendOmniEventUzUnpackedFormSendingOption('delete', 'delete')
                         }
                     }
