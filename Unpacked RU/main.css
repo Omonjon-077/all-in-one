@@ -13701,7 +13701,7 @@ button[aria-expanded^="true"] svg {
     font-size: var(--uhf-based-font-size);
 }
 .uz-handraizer-form-bg{
-    background: url("https://images.samsung.com/is/image/samsung/assets/uz_ru/unpacked/jan2024/bg-pc.jpg") no-repeat center/cover;
+    background: black;
     max-width: 1440px;
     position: absolute;
     top: 0;
@@ -14068,7 +14068,7 @@ button[aria-expanded^="true"] svg {
 
 @media (max-width: 450px) {
     .uz-handraizer-form-bg {
-        background: url("https://images.samsung.com/is/image/samsung/assets/uz_ru/unpacked/jan2024/bg-mb.jpg") no-repeat center/cover;
+        background: black;
     }
 
     .uhf-form.js-form-common {
@@ -14089,4 +14089,37 @@ button[aria-expanded^="true"] svg {
 
 .breadcrumb  {
     margin-bottom: 0 !important;
+}
+.extra-blocks-wrp{
+    margin-top: 50px;
+}
+.extra-blocks{
+    display: flex;
+    width: 79%;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+.extra-blocks div:first-child{
+    margin-right: 40px;
+}
+.extra-blocks .uhf-title__description{
+    text-align: left;
+}
+@media (max-width: 721px) {
+    .extra-blocks{
+        display: flex;
+        gap: 20px;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+    }
+    .extra-blocks a{
+        font-size: 11px;
+    }
+    .extra-blocks .uhf-title__description{
+        text-align: center;
+    }
+    .extra-blocks div:first-child{
+        margin-right: 0;
+    }
 }
