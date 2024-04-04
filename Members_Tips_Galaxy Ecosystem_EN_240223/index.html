@@ -1,0 +1,394 @@
+<!DOCTYPE HTML>
+<html data-language="English">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <title>Tips</title>
+    <link rel="stylesheet" type="text/css" href="https://img.samsungmembers.com/tips/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="swiper-bundle.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="jquery.js"></script>
+    <script src="swiper-bundle.min.js"></script>
+    <script>
+        function FlowMenu() {
+            this.fixed = false;
+            this.pos = 0;
+            this.focus = -1;
+            this.sections = [0, 0, 0];
+
+            this.ready = function () {
+                $(window).on('resize', this.resize.bind(this));
+                this.resize();
+                $(document).on('scroll', this.onScroll.bind(this));
+                $('#FTab1').on('click', this.onClickTab.bind(this));
+                $('#FTab2').on('click', this.onClickTab.bind(this));
+            }
+            this.resize = function () {
+                this.pos = $('#FlowTab').offset().top;
+                this.sections[0] = $('#TipsSection1').offset().top;
+                this.sections[1] = $('#TipsSection2').offset().top;
+            }
+            this.onClickTab = function (e) {
+                e.preventDefault();
+                var k = e.currentTarget.id.charAt(4);
+                var pos = $('#TipsSection' + k).offset().top;
+                $('html,body').animate({scrollTop: pos}, 500);
+            }
+            this.onScroll = function (e) {
+                var tg = 0, scr = $(document).scrollTop(),
+                    sec1 = $('#TipsSection1').offset().top - 20,
+                    sec2 = $('#TipsSection2').offset().top - 20;
+                if (this.fixed && scr < this.pos) {
+                    this.fixed = false;
+                    $('#FlowTab').removeClass('ftabFix');
+                } else if (!this.fixed && scr >= this.pos) {
+                    this.fixed = true;
+                    $('#FlowTab').addClass('ftabFix');
+                }
+                if (scr >= sec2) tg = 2;
+                else if (scr >= sec1) tg = 1;
+                if (this.focus != tg) {
+                    this.focus = tg;
+                    $('#FTab1').removeClass('ftabFocus');
+                    $('#FTab2').removeClass('ftabFocus');
+                    if (tg)
+                        $('#FTab' + tg).addClass('ftabFocus');
+                }
+            }
+        }
+
+        $flowmenu = new FlowMenu();
+
+
+        $(document).ready(function () {
+            $flowmenu.ready();
+            var swiper = new Swiper(".mySwiper2", {
+                spaceBetween: 20,
+                pagination: {
+                    el: ".swiper-pagination",
+                },
+                navigation: {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev",
+                },
+            });
+            var swiper = new Swiper(".mySwiper3", {
+                spaceBetween: 20,
+                pagination: {
+                    el: ".swiper-pagination",
+                },
+                navigation: {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev",
+                },
+            });
+        });
+
+
+    </script>
+</head>
+
+<body class="en">
+
+<div class="tips">
+    <div class="landing content">
+        <h1></h1>
+    </div>
+
+    <div class="content first">
+        <h2>
+            Наслаждайтесь экосистемой Samsung Galaxy, по-своему
+        </h2>
+        <p class="center">
+            Проявите креативность и продуктивность с Galaxy Book - от учебы до дизайнерской работы.<br>
+            Посмотрите, что еще вы можете сделать в многозадачном режиме с помощью различных функций Samsung Galaxy!<br>
+        </p>
+    </div>
+
+    <div id="FlowTabArea">
+        <div id="FlowTab">
+            <div class="inner">
+                <a id="FTab1" class="ftabFocus" href="#">
+                    <b>Производительность</b></a>
+                <a id="FTab2" href="#">
+                    <b>Креативность</b></a>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="content">
+        <div id="TipsSection1"></div>
+        <div class="group" style="padding-top:12rem;">
+
+            <label>#1</label>
+            <h3 style="color:#252525;" style="font-family: 'SamsungSharpSans', 'RobotoRegular', Arial, sans-serif">
+                Плавная и быстрая многозадачность
+            </h3>
+            <p>
+                Боретесь с потоком графических материалов и слишком большим количеством текстов? Вот несколько советов,
+                как отправить одновременно несколько изображений и просмотреть фразы из Galaxy Book прямо на вашем
+                смартфоне.
+            </p>
+
+            <img src="1.png" style="padding: 5rem 0 1rem;"/>
+
+            <h4 class="blue" style="margin-top:2rem;">Повысьте свою производительность</h4>
+            <div id="SwipeArea1" class="SwipeArea" style="padding-top: 2rem;">
+                <div class="SwipeWrap swiper mySwiper2" name="Dots1">
+                    <div class="SwipeInner swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="ca1.png"/>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="ca2.png"/>
+                        </div>
+
+                    </div>
+                    <div class="swiper-button-next" id="ArrowR_1"></div>
+                    <div class="swiper-button-prev" id="ArrowL_1"></div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+            <h5 style="margin-top:0rem;">
+                1. Простое и душевное общение
+            </h5>
+            <p style="color: #000;padding-bottom: 2rem;">
+                Хотите знать, как поделиться множеством файлов и изображений
+                для вашего проекта со смартфона на ноутбук?<br>
+                Просто откройте Quick Share для беспроводного обмена данными между устройствами Samsung Galaxy.
+            </p>
+            <h5 style="margin-top:0rem;">
+                2. Перенесите свои мобильные приложения на ПК
+            </h5>
+            <p style="color: #000; padding-bottom: 2rem;">
+                Работаете над своим проектом на ПК?<br>
+                Не нужно переключаться туда и обратно между вашим компьютером и смартфоном! Связь с Windows переносит
+                мобильные приложения прямо на ваш компьютер.
+            </p>
+            <h4 class="blue" style="margin-top:2rem;">Зацените это!
+            </h4>
+            <div class="howto howtoimg" style="padding-top: 2rem;">
+                <table>
+                    <tr>
+                        <th style="padding-top: 2.5rem;"><img src="icon1.png"/></th>
+                        <td>
+                            <b>Делитесь файлами одним кликом, <span class="e_s">Quick Share</span> </b><br>
+                            Простой способ беспроводного обмена файлами с телефона на телефон,
+                            и даже на планшет / ПК!
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><small class="description"
+                                   style="letter-spacing:-0.2px; padding: 0 2.5rem; color: #aaaaaa!important; font-size: 2.2rem;">
+                            * Доступно на устройстве Galaxy с установленной версией One UI 2.1 или более поздних версий,
+                            а Quick Share использует Bluetooth с низким энергопотреблением и Wi-Fi.<br>
+                            * Общий доступ к фотографиям, видео и файлам в Quick Share доступен только на устройствах
+                            Samsung Galaxy.
+                        </small>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="howto howtoimg" style="padding-top: 5rem;">
+                <table>
+                    <tr>
+                        <th style="padding-top: 2.5rem;"><img src="icon2.png"/></th>
+                        <td>
+                            <b>Ваш телефон находится на вашем компьютере,<br>
+                                <span class="e_s">Связь с Windows</span></b><br>
+                            Вы можете работать в многозадачном режиме с приложениями для телефона на ПК! Наслаждайтесь
+                            плавным взаимодействием между устройствами!
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><small class="description"
+                                   style="letter-spacing:-0.2px; padding: 0 2.5rem; color: #aaaaaa!important; font-size: 2.2rem;">
+                            *Некоторые мобильные приложения могут ограничивать доступ к контенту на других экранах.
+                            Некоторые связанные функции могут отличаться в зависимости от версии приложения, ОС Android
+                            и устройства.<br>
+                            *Пользователи должны подключить свое устройство Samsung Galaxy к Windows ПК с помощью
+                            функции "Связь с Windows" на телефоне и приложения "Microsoft Связь с телефоном" на ПК и
+                            следовать инструкциям по настройке, включая вход в ту же учетную запись Microsoft.<br>
+                            *Связь с Windows предварительно загружена на некоторые устройства Samsung Galaxy. Для ПК
+                            (приложение Microsoft Связь с телефоном) требуется Windows 10 или выше. "Microsoft Связь с
+                            телефоном" рекомендует, чтобы устройство Samsung Galaxy было подключено к той же сети Wi-Fi,
+                            что и ПК.
+                        </small>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="ban0" style="margin-top: 10rem; background-color: #f5f5f5;">
+                <img src="banner_bg0.png">
+                <div class="ban_txt0" style="top: 3rem">
+                        <span style="color: #000;"><b>Лучший партнер для вашего <br>
+                            Galaxy Book<br>
+                                <span class="e_s">Galaxy Z Fold4</span>
+                            </b></span>
+                    <a href="https://www.samsung.com/us/smartphones/galaxy-z-fold4/">
+                        Узнать больше <span>></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div id="TipsSection2"></div>
+        <div class="group" style="margin-top:6rem;">
+
+            <label>#2</label>
+            <h3>Совместное вдохновение в Samsung Galaxy
+            </h3>
+            <p style="padding-bottom:3rem;">
+                Дайте волю своим ярким идеям на большом экране в любое время и в любом месте. Создайте свой шедевр более
+                тонким и детальным способом с экосистемой Samsung Galaxy!
+            </p>
+            <img src="2.png" style="padding: 5rem 0 1rem;"/>
+            <h4 class="blue" style="margin-top:4rem;">Позвольте своей креативности сиять</h4>
+            <div id="SwipeArea" class="SwipeArea" style="padding-top: 2rem;">
+                <div class="SwipeWrap swiper mySwiper3" name="Dots1">
+                    <div class="SwipeInner swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="ca3.png"/>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="ca4.png"/>
+                        </div>
+
+                    </div>
+                    <div class="swiper-button-next" id="ArrowR_1"></div>
+                    <div class="swiper-button-prev" id="ArrowL_1"></div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+            <h5 style="margin-top:0rem;">
+                1. Увеличьте экран вдвое для большей производительности
+            </h5>
+            <p style="color: #000;padding-bottom: 2rem;">
+                Нет необходимости переходить от рабочего окна и референсу на ПК. Используйте планшет в качестве второго
+                экрана, перемещая референс.
+            </p>
+            <h5 style="margin-top:0rem;">
+                2. То, что на вашем телефоне, теперь и на вашем компьютере
+            </h5>
+            <p style="color: #000; padding-bottom: 2rem;">
+                Пришла в голову потрясающая идея на ходу? Делайте заметки в Samsung Notes на своем планшете, пока не
+                забыли! Продолжайте развивать свои идеи в Galaxy Book, когда вернетесь домой.
+            </p>
+            <h4 class="blue" style="margin-top:2rem;">Зацените!
+            </h4>
+            <div class="howto howtoimg" style="padding-top: 2rem;">
+                <table>
+                    <tr>
+                        <th style="padding-top: 5.5rem;"><img src="icon3.png"/></th>
+                        <td>
+                            <b>Galaxy Tab как двойной монитор! <br>
+                                <span class="e_s">Ваш второй экран</span></b><br>
+                            Работайте на обоих устройствах с помощью Samsung Multi Control. Просто добавьте второй экран
+                            или продублируйте экран для удобства подключения.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><small class="description"
+                                   style="letter-spacing:-0.2px; padding: 0 2.5rem; color: #aaaaaa!important; font-size: 2.2rem;">
+                            * Второй экран доступен только на некоторых моделях планшетов Galaxy, включая Galaxy Tab S7,
+                            S7+, S7 FE, S8, S8+ и S8 Ultra, и доступен на устройствах Samsung Galaxy с установленной
+                            версией One UI 3.1 или более поздних версий.
+                        </small>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="howto howtoimg" style="padding-top: 5rem;">
+                <table>
+                    <tr>
+                        <th style="padding-top: 5.5rem;"><img src="icon4.png"/></th>
+                        <td>
+                            <b>Записывайте идеи прямо на месте!<br>
+                                <span class="e_s">Samsung Notes</span></b><br>
+                            Все заметки синхронизируются на ваших устройствах. Наслаждайтесь улучшенной системой
+                            организации папок, а также синхронизированными аудио закладками.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><small class="description"
+                                   style="letter-spacing:-0.2px; padding: 0 2.5rem; color: #aaaaaa!important; font-size: 2.2rem;">
+                            * Требуется подключение к сети или Wi-Fi. Все устройства должны быть подключены к одной
+                            учетной записи Samsung.
+                        </small>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="ban0" style="margin-top: 10rem; background-color: #000000;">
+                <img src="banner_bg1.png">
+                <div class="ban_txt0">
+                        <span style="color: #fff;"><b style="font-size: 25px">Расширьте свою идею с помощью<br>
+                                <span class="e_s">Galaxy Tab S8 Series</span>
+                            </b></span>
+                    <a href="https://www.samsung.com/us/tablets/tab-s8/">Узнать больше
+                        <span>></span></a>
+                </div>
+            </div>
+            <h4 class="blue" style="margin-top:3rem;">
+                <dl class="tip">
+                    <dt class="q"><img src="icon6.png"></dt>
+                    <dd class="q">Наслаждайтесь связанной мощью Samsung Galaxy!
+                    </dd>
+                </dl>
+            </h4>
+            <p style="color: #000; padding-bottom: 2rem;">
+                Потрясающе в одиночку, но вместе еще лучше. Будьте продуктивны и сохраняйте мотивацию. Повысьте свою
+                производительность с помощью экосистемы Samsung Galaxy!
+            </p>
+            <img src="3.png" style="padding: 5rem 0 1rem;"/>
+            <small class="description"
+                   style="letter-spacing:-0.2px; padding: 3rem 5rem; color: #aaaaaa!important; font-size: 2.2rem;">
+                *Показанные Galaxy Tab S8, Galaxy S22 Ultra, Galaxy Watch 4 и Galaxy Buds 2 продаются отдельно.
+            </small>
+        </div>
+    </div>
+
+
+    <div class="content endings">
+        <div></div>
+        <p>
+            Избавьтесь от больших процессов и повысьте свою эффективность.
+            Ляюбая работа с Galaxy Book даст удивительную синергию, о которой вы не пожалеете.
+        </p>
+    </div>
+    <div class="content" style="margin-top:0px">
+        <div class="ban0" style="margin-top: 10rem;background-color: #f0f0f0;">
+            <img src="banner_bg2.png">
+            <div class="ban_txt0">
+                    <span style="color: #000;"><b style="font-size: 25px">Повысьте свою эффективность с<br>
+                            <span class="e_s">Galaxy Book 2 Pro 360</span>
+                        </b></span>
+                <a href="https://www.samsung.com/us/galaxybooks/">Узнать больше
+                    <span>></span></a>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="footer">
+        <div class="note">
+            ※ Изображения приведены в качестве примера
+        </div>
+        <div class="note" style="padding:2.5rem; text-align:center; font-size:1.8rem;">
+            *Данный контент разработан на основе Galaxy S22 Ultra, Galaxy Tab S8 Ultra (Android версии 13, One UI
+            версии 5.0) и Galaxy Book 2 Pro 360 (Windows 11 Home). <br> Доступность функций, пользовательские интерфейсы
+            могут отличаться в зависимости от региона/страны, версии OC/One UI и продавца. Могут быть изменены без
+            уведомления.
+        </div>
+        <div class="copy">
+            Copyrightⓒ 2016-2024 ООО Samsung Electronics Co. Все права защищены
+        </div>
+    </div>
+</div>
+</body>
+
+</html>

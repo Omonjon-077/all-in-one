@@ -1,0 +1,1293 @@
+@charset "utf-8";
+
+@font-face {
+    font-family:'SamsungOneKorean';
+    src: url('SamsungOneKorean.woff2') format("woff2");
+    font-style:normal;
+    font-weight:normal;
+}
+
+
+@font-face {
+  font-family: 'SamsungOne';
+  src: url('https://r1.community.samsung.com/html/assets/SamsungOne-400.eot');
+  src: url('https://r1.community.samsung.com/html/assets/SamsungOne-400.eot?#iefix') format("embedded-opentype"),
+      /* url('https://r1.community.samsung.com/html/assets/SamsungOne-400.woff2') format("woff2"), */
+      url('https://r1.community.samsung.com/html/assets/SamsungOne-400.woff') format("woff"),
+      url('https://r1.community.samsung.com/html/assets/SamsungOne-400.ttf') format("truetype");;
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap
+}
+
+@font-face {
+  font-family: 'SamsungOne';
+  src: url('https://r1.community.samsung.com/html/assets/SamsungOne-700.eot');
+  src: url('https://r1.community.samsung.com/html/assets/SamsungOne-700.eot?#iefix') format("embedded-opentype"),
+      /* url('https://r1.community.samsung.com/html/assets/SamsungOne-700.woff2') format("woff2"), */
+      url('https://r1.community.samsung.com/html/assets/SamsungOne-700.woff') format("woff");
+  font-weight: 700;
+  font-style: bold;
+  font-display: swap
+}
+
+@font-face {
+    font-family: 'SamsungSharpSans';
+
+    src: url('SamsungSharpSansBd.woff2') format("woff2"),
+    url('SamsungSharpSansBd.woff') format("woff"),
+     url("https://samsung.com/us/smg/etc/designs/samsung/global/global_clientlib/fonts/SamsungSharpSans-Bold.eot"),
+        url("https://samsung.com/us/smg/etc/designs/samsung/global/global_clientlib/fonts/SamsungSharpSans-Bold.eot?#iefix") format("embedded-opentype"),  
+        url("https://samsung.com/us/smg/etc/designs/samsung/global/global_clientlib/fonts/SamsungSharpSans-Bold.svg#SamsungSharpSans-Bold") format("svg");
+    font-weight: 700;
+    font-style: bold;
+    font-display: swap
+}
+
+html {
+  -webkit-text-size-adjust: none;
+}
+html,
+body {
+  direction: ltr;
+}
+body,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+table,
+th,
+td,
+form,
+fieldset,
+legend,
+textarea,
+input,
+select,
+textarea,
+button,
+figure,
+figcaption {
+  margin: 0;
+  padding: 0;
+}
+img,
+form,
+fieldset,
+svg {
+  border: 0;
+  vertical-align: top;
+}
+input,
+button,
+select {
+  -webkit-border-radius: 0;
+  border-radius: 0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+button {
+  border: 0;
+  background: none;
+  cursor: pointer;
+}
+button:disabled {
+  cursor: default;
+}
+button::-moz-focus-inner {
+  padding: 0;
+  margin: -1px;
+}
+ul,
+ol {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+.blind,
+legend {
+  overflow: hidden;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  clip: rect(1px, 1px, 1px, 1px);
+}
+body,
+textarea,
+input,
+select,
+textarea,
+button {
+  font-family: "SamsungOneKorean", "SamsungSharpSans", "SamsungOne",
+    "RobotoRegular", Arial, sans-serif;
+}
+body {
+  color: #303030;
+  background: #fff;
+}
+@media screen and (max-width: 719px) {
+  HTML,
+  body {
+    font-size: 1.388889vw;
+  }
+}
+@media screen and (min-width: 720px) {
+  HTML,
+  body {
+    font-size: 10px;
+  }
+}
+
+.tips * {
+  font-family: "SamsungOneKorean", "RobotoRegular", Arial, sans-serif;
+}
+.tips .group LABEL,
+.tips H1,
+.tips H2,
+.tips H3 {
+  font-family: "SamsungOneKorean", "SamsungSharpSans", "RobotoRegular", Arial,
+    sans-serif;
+}
+.tips .left {
+  text-align: left !important;
+}
+.tips .landing {
+  height: 92rem;
+  margin-top: 0 !important;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url(landing.jpg);
+}
+.tips .landing H1 {
+  font-size: 5.8rem;
+  text-align: center;
+  padding-top: 12.5rem;
+}
+.tips .content .disclaimer {
+  max-width: 720px;
+  box-sizing: border-box;
+  display: block;
+  padding: 0 5rem;
+  padding-bottom: 0rem;
+  font-size: 2.73rem;
+  line-height: 2.8rem;
+  /*position: absolute;*/
+  /*top: 119rem;*/
+  color: #b3b3b3 !important;
+  font-weight: 400;
+  word-break: keep-all;
+}
+
+.tips .black {
+  color: #000 !important;
+}
+.tips .content {
+  margin: 0 auto;
+  margin-top: 7.5rem;
+  max-width: 720px;
+}
+.tips .first {
+  color: #000;
+  background-size: contain;
+  margin-top: 0rem !important;
+}
+.tips .first H2 {
+  font-size: 3rem;
+  font-weight: 700;
+  padding: /*12rem*/ 0 0 0 0 !important;
+}
+.tips .first H3 {
+  font-size: 4rem !important;
+  font-weight: 600;
+  text-align: center;
+  padding: 5rem 0 0 0 !important;
+}
+.tips .first H4 {
+  font-size: 3.5rem;
+  text-align: center;
+  margin-top: 3rem;
+  margin-bottom: -2rem;
+  position: relative;
+  /*text-decoration: underline;*/
+}
+
+.tips .first H4 span.underline1 {
+  display: inline-block;
+  width: 45rem;
+  height: 0.1rem;
+  background: #000;
+  position: absolute;
+  left: 50%;
+  top: 4.3rem;
+  transform: translate(-50%, 0);
+}
+
+.tips .first H4 span.underline2 {
+  display: inline-block;
+  width: 25rem;
+  height: 0.1rem;
+  background: #000;
+  position: absolute;
+  left: 50%;
+  top: 4.3rem;
+  transform: translate(-50%, 0);
+}
+
+.tips .first DIV IMG {
+  margin-top: 11rem;
+}
+.tips .first P {
+  color: #000 !important;
+  padding: 4rem 2.5rem 5rem !important;
+}
+.tips .content .center {
+  text-align: center;
+}
+.tips .content IMG {
+  width: 100vw;
+  height: auto;
+  display: block;
+  max-width: 720px;
+}
+.tips .content H2,
+.tips .content H3,
+.tips .content H4,
+.tips .content P,
+.tips .content LABEL {
+  padding: 0 5rem;
+}
+.tips .content H2 {
+  font-size: 5.8em;
+  padding-top: 3.5rem !important;
+  margin: 0;
+  text-align: center;
+}
+.tips .content H3 {
+  color: #000;
+  font-size: 5.8rem;
+  padding-bottom: 3rem;
+  letter-spacing: 0px;
+}
+.tips .content H2.sb,
+.tips .content H3.sb {
+  font-family: "SamsungSharpSans", Arial, sans-serif;
+  font-size: 5.4em;
+}
+.tips .content H4 {
+  font-size: 3em;
+}
+.tips .ctaBtn .sb {
+  font-family: "SamsungSharpSans", Arial, sans-serif;
+  font-size: 2.8rem;
+}
+.tips .content H3.sb span {
+  font-size: 4.5rem;
+}
+.tips .content .group H4.sb {
+  font-family: "SamsungOne", Arial, sans-serif;
+  padding: 0rem 5rem;
+  font-size: 3.2rem;
+  font-weight: bold;
+}
+
+.tips .content .group H4.sb_B {
+  font-family: "SamsungSharpSans", Arial, sans-serif;
+  padding: 0rem 5rem;
+  font-size: 2.5rem;
+  font-weight: normal;
+}
+.tips .content P {
+  word-break: keep-all;
+  color: #aaaaaa;
+  text-align: center;
+  padding-top: 3rem;
+  font-size: 2.8rem;
+  line-height: 4.6rem;
+  padding-bottom: 0rem;
+}
+.tips .content P I {
+  font-size: 0.8em;
+  font-style: normal;
+}
+.tips .content .icon {
+  height: 1.2em;
+  width: auto;
+  display: inline-block;
+  vertical-align: middle;
+}
+.tips .content .group {
+  padding-top: 0rem;
+}
+.tips .content .group H4 {
+  font-size: 3.3rem;
+  padding-bottom: 4rem;
+}
+.tips .content .group H4.subT {
+  padding-bottom: 3rem;
+  padding-top: 3rem;
+}
+.tips .content .group P {
+  text-align: left;
+  padding-top: 0;
+  padding-bottom: 5rem;
+}
+.tips .content .group SMALL {
+  color: #999;
+  font-size: 2rem;
+  padding-top: 4rem;
+  display: block;
+  line-height: 1.6em;
+  font-family: "SamsungOneKorean", "RobotoRegular", Arial, sans-serif;
+}
+.tips .content .group label {
+  display: block;
+  font-weight: bold;
+  text-decoration: underline;
+  font-size: 3.2rem;
+  font-style: normal;
+  padding-bottom: 5.5rem;
+  color: #000;
+  font-family: "SamsungSharpSans", "RobotoRegular", Arial, sans-serif;
+}
+
+.tips .howto {
+  text-align: left;
+  padding-top: 1rem;
+}
+.tips .howto2 p {
+  padding-bottom: 0 !important;
+}
+y .tips .howto LABEL {
+  font-size: 3rem;
+  font-weight: bold;
+  font-family: "SamsungOneKorean", "RobotoRegular", Arial, sans-serif;
+}
+.tips .howto LABEL {
+  font-size: 3.4rem;
+  font-weight: bold;
+  font-family: "SamsungOneKorean", "SamsungOneKorean", "RobotoRegular", Arial,
+    sans-serif !important;
+  padding: 1rem 5rem;
+  display: block;
+}
+.tips .howto LABEL.labelHowto {
+  font-size: 3.4rem;
+  font-weight: bold;
+  padding-bottom: 1.5rem;
+  font-family: "SamsungOneKorean", "RobotoRegular", Arial, sans-serif;
+}
+.tips .howto P {
+  color: #000;
+  padding-top: 2.5rem;
+  text-align: left;
+  padding-bottom: 0;
+  font-size: 2.73rem;
+  font-family: "SamsungOneKorean", "RobotoRegular", Arial, sans-serif;
+}
+
+.tips .howtofs P img {
+  display: inline;
+  width: 3.2rem;
+  height: 3.2rem;
+  vertical-align: middle;
+  margin-left: 0.3rem;
+}
+.tips .howto P B {
+  margin-top: 0rem;
+}
+.tips .howto SMALL {
+  font-size: 2rem;
+  line-height: 1.6em;
+  color: #666666 !important;
+  padding-top: 1.5em;
+  display: inline-block;
+}
+.tips .howto TABLE {
+  margin: 0 5rem;
+  margin-top: 0rem;
+  width: calc(100% - 10rem);
+}
+.tips .howto TABLE TR {
+  display: inline-block;
+  background: #eeeeee;
+  width: 100%;
+  border-radius: 0px;
+  margin-bottom: 0rem;
+  padding: 1rem 0;
+}
+.tips .howto TH {
+  word-break: keep-all;
+  vertical-align: top;
+}
+.tips .howto TH,
+.tips .howto TD b {
+  /* color: #227aff; */
+}
+.tips .howto TH,
+.tips .howto TD {
+  color: #000000;
+  font-size: 2.4rem;
+  vertical-align: middle;
+  padding: 0.2em;
+  line-height: 1.7em;
+}
+.tips .howto.howtip TD {
+  line-height: 1.4em;
+}
+.tips .howto.howtip TD b {
+  color: #0481ff !important;
+}
+.tips .howto TD div {
+  /* color: #93beff;
+  font-size: 2rem; */
+}
+.tips .howto.howtosub TH {
+  color: #000;
+  font-size: 1.8rem;
+  width: 30%;
+  text-align: center;
+  line-height: 4rem;
+  vertical-align: middle;
+}
+.tips .howto.howtosub TH div {
+  line-height: normal;
+  color: #aaaaaa;
+  font-size: 1.6rem;
+}
+.tips .content P.howtotxt {
+  padding: 0 8rem;
+  font-size: 2.2rem;
+  color: #505050;
+}
+
+.towlines {
+  line-height: 2.5rem;
+  display: inline-flex;
+}
+.tips .howto.howtosub TD {
+  padding: 0.2em 1em;
+  vertical-align: middle;
+  word-break: keep-all;
+}
+.tips .howto.howtosub TH img {
+  margin: 0 auto;
+}
+
+.tips .howtoimg {
+  position: relative;
+  margin: 2rem 0;
+  padding-top: 0;
+}
+.tips .howtoimg IMG {
+  width: 10.7rem;
+  height: auto;
+  margin-left: 1.5rem;
+  margin-right: 1rem;
+}
+.tips .howtoimg table tr th img {
+  margin-top: 0rem;
+}
+.tips .howtoimg table tr:last-child th img {
+  margin-top: 0rem;
+}
+.tips .howtoimg.howtosub IMG,
+.tips .howtoimg.howtip IMG {
+  width: 70%;
+}
+
+.grid_wrap {
+  width: 62rem;
+  height: auto;
+  margin: 0 auto;
+}
+.grid_wrap p {
+  font-size: 2.6rem !important;
+  line-height: 4.2rem;
+}
+.grid_left {
+  float: left;
+  width: 48%;
+}
+.grid_left div {
+  width: 100%;
+  height: auto;
+  background: rgba(34, 122, 255, 0.05);
+  border-radius: 25px;
+  margin-bottom: 2.5rem;
+}
+.grid_left div.l4 p {
+  line-height: 3.5rem;
+  padding-bottom: 1rem !important;
+}
+.grid_left ul {
+  font-size: 2.6rem;
+  color: #303030;
+  line-height: 4.2rem;
+  padding-left: 2rem;
+  padding-bottom: 2rem;
+}
+.grid_left ul li {
+  line-height: 4.2rem;
+}
+.grid_left div p {
+  color: #303030 !important;
+  padding: 2rem !important;
+}
+
+.grid_right {
+  float: right;
+  width: 48%;
+}
+.grid_right ul {
+  font-size: 2.6rem;
+  color: #303030;
+  line-height: 4.2rem;
+  padding-left: 2rem;
+  padding-bottom: 2rem;
+}
+.grid_right ul li::before {
+  content: "- ";
+  color: #303030;
+  margin-left: -1.5rem;
+}
+.grid_right ul li {
+  line-height: 4.2rem;
+  margin-left: 2rem;
+}
+
+.grid_right div {
+  width: 100%;
+  height: auto;
+  background: rgba(34, 122, 255, 0.05);
+  border-radius: 25px;
+  margin-bottom: 2rem;
+}
+.grid_right div.r1 p {
+  line-height: 3.4rem !important;
+  padding-bottom: 1rem !important;
+}
+.grid_right div p {
+  color: #303030 !important;
+  padding: 2rem !important;
+}
+
+.tips .tip {
+  margin: 0 5rem;
+  margin-top: 2.5rem;
+  display: table;
+  width: 62rem;
+  border-radius: 1rem;
+}
+.tips .tip img {
+  width: 100%;
+  margin-top: 2rem;
+}
+
+.tips .tip DT,
+.tips .tip DD {
+  display: table-cell;
+  vertical-align: middle;
+  font-size: 2.8rem;
+  line-height: 4.6rem;
+}
+.tips .tip DT.q {
+  font-family: "SamsungSharpSans", "RobotoRegular", Arial, sans-serif;
+  color: #fff;
+  width: 6rem;
+  text-align: center;
+  border-radius: 1rem;
+}
+.tips .tip DD.q {
+  color: #303030;
+  font-weight: bold;
+  font-family: "SamsungOneKorean", "RobotoRegular", Arial, sans-serif;
+  padding-left: 1.5rem;
+  padding-top: 1.5rem;
+}
+
+.tips .tip:nth-of-type(3) DD.q,
+.tips .tip:nth-of-type(5) DD.q {
+  padding-top: 6.5rem !important;
+}
+
+.tips .tip DT.a {
+  font-size: 3.4rem !important;
+  font-weight: bold;
+  font-family: "SamsungSharpSans", "RobotoRegular", Arial, sans-serif;
+  color: rgba(48, 48, 48, 0.2);
+  width: 6rem;
+  height: 6rem;
+  vertical-align: top;
+  padding-top: 0.5rem;
+  text-align: center;
+  border-radius: 1rem;
+}
+.tips .tip DD.a {
+  color: rgba(48, 48, 48, 0.7);
+  font-family: "SamsungOneKorean", "RobotoRegular", Arial, sans-serif;
+  padding-left: 1.5rem;
+}
+
+.cardImg {
+  position: relative;
+}
+.cardImg img {
+  position: relative;
+  width: 62rem !important;
+  height: auto !important;
+  margin: 0 auto;
+}
+
+.tips .endings DIV {
+  margin-left: 2.5rem;
+  margin-right: 2.5rem;
+  border: solid 1px #e5e5e5;
+}
+.tips .endings P {
+  color: #000;
+  font-size: 2.6rem;
+  line-height: 4.6rem;
+  padding: 15rem 3rem;
+  text-align: center;
+}
+.tips .ctaBtn {
+  background-color: #227aff;
+  color: #fff;
+  display: block;
+  padding: 2rem;
+  border-radius: 40rem;
+  font-size: 3.2rem;
+  font-weight: bold;
+  box-shadow: 0px 5px 15px rgba(34, 122, 255, 0.3);
+}
+.tips .endings P.ctaBtn_wrap {
+  padding: 0rem 5rem 15rem;
+}
+/*
+.tips .footer{
+    color:rgba(0,0,0,0.7);         background-color: #f2f2f2;
+    text-align: center; padding: 12rem 4rem;    word-break: keep-all;
+    font-family: "SamsungOneKorean", "RobotoRegular", Arial, sans-serif; }
+.tips .footer .note{    font-size: 2.1rem;      padding-bottom: 5rem; }
+.tips .footer .copy{    font-size: 1.69rem;      line-height: 1.7em; }
+*/
+
+.tips .footer {
+  background-color: #f2f2f2;
+  padding: 13rem 0;
+  text-align: center;
+  font-size: 2.2rem;
+  word-break: keep-all;
+}
+.tips .footer .note {
+  font-size: 2.2rem;
+  color: #252525;
+  padding-bottom: 6rem;
+  line-height: 2.8rem;
+}
+
+.tips .footer .copy {
+  font-size: 1.8rem;
+  color: #252525;
+  line-height: 2.8rem;
+  font-family: "SamsungOneKorean", "SamsungOne", "RobotoRegular", Arial,
+    sans-serif;
+}
+
+.tips .blue {
+  color: #227aff !important;
+}
+.tips .sky {
+  color: #227aff !important;
+}
+
+.tips .ctaBtn {
+  background-color: #000;
+  color: #fff;
+  display: block;
+  text-align: center;
+  padding: 2.5rem;
+  border-radius: 40rem;
+  font-size: 3.2rem;
+  font-weight: bold;
+  box-shadow: 0px 5px 19px rgba(0, 0, 0, 0.4);
+}
+
+#FlowTabArea {
+  height: /*10.2rem;*/ 9rem;
+  padding-top: 11rem;
+  padding-bottom: 1rem;
+}
+#FlowTab {
+  width: 100vw;
+  background-color: #fff;
+  text-align: center;
+  background-size: contain;
+  background-image: url(floating.jpg);
+  z-index: 100;
+}
+#FlowTab .inner {
+  width: 72rem;
+  margin: 0 auto;
+  display: table;
+}
+#FlowTab A {
+  width: 33.333%;
+  height: 10.2rem;
+  font-size: 2.2rem;
+  color: #7f7f7f;
+  display: table-cell;
+  vertical-align: middle;
+}
+#FlowTab B {
+  display: inline-block;
+  font-family: "SamsungOneKorean", "SamsungSharpSans", "RobotoRegular", Arial,
+    sans-serif;
+  font-size: 2.4rem;
+}
+/*#FlowTab A:hover B, .ftabFocus B{
+    color: #000000;     border-bottom: solid 0.14em #000 !important; }*/
+#FlowTab A:hover B,
+.ftabFocus B {
+  color: #000000;
+  border-bottom: solid 0.14em #000 !important;
+}
+.ftabFix {
+  top: 0px;
+  position: fixed !important;
+}
+
+.SwipeArea {
+  padding-top: 6rem;
+}
+.SwipeArea H4 {
+  color: #227aff;
+}
+.SwipeArea A {
+  height: 67.5rem;
+  width: 10rem;
+  display: block;
+  background-size: 10rem auto;
+  position: absolute;
+  background-repeat: no-repeat;
+}
+
+.SwipeArea2 A {
+  height: 86.4rem;
+  width: 10rem;
+  display: block;
+  background-size: 10rem auto;
+  position: absolute;
+  background-repeat: no-repeat;
+}
+.SwipeArea3 A {
+  height: 67.5rem;
+  width: 10rem;
+  display: block;
+  background-size: 10rem auto;
+  position: absolute;
+  background-repeat: no-repeat;
+}
+.SwipeArea #ArrowL {
+  background-image: url(arrowL_2.png);
+  background-position: left center;
+}
+.SwipeArea #ArrowR {
+  margin-left: 62rem;
+  background-image: url(arrowR_2.png);
+  background-position: right center;
+}
+.SwipeDots B {
+  color: #000;
+}
+.SwipeDots {
+  color: #979797;
+  text-align: center;
+  font-size: 2.1rem;
+  margin-top: 0rem;
+}
+.SwipeWrap {
+  width: 100%;
+  overflow: hidden;
+}
+
+.SwipeInner img {
+  width: 72rem !important;
+  height: 67.5rem !important;
+  overflow: hidden;
+  display: inline-block !important;
+  box-sizing: border-box;
+  float: left;
+}
+.SwipeInner.SwipeInner2 img {
+  width: 72rem !important;
+  height: 74.8rem !important;
+}
+
+.SwipeArea #ArrowL_2 {
+  background-image: url(arrowL_2.png);
+  background-position: left center;
+  margin-left: 2rem;
+}
+.SwipeArea #ArrowR_2 {
+  margin-left: 58rem;
+  background-image: url(arrowR_2.png);
+  background-position: right center;
+}
+
+.SwipeArea #ArrowL_3 {
+  background-image: url(arrowL_2.png);
+  background-position: left center;
+}
+.SwipeArea #ArrowR_3 {
+  margin-left: 62rem;
+  background-image: url(arrowR_2.png);
+  background-position: right center;
+}
+
+#SwipeArea2 img {
+  width: 72rem;
+  height: 67.5rem;
+  overflow: hidden;
+  display: inline-block !important;
+  box-sizing: border-box;
+  float: left;
+}
+
+.content.first.end {
+  padding-top: 10rem;
+}
+.tips .endings DIV.disclaimer {
+  text-align: center;
+  border: none;
+  padding: 0 2rem 6rem;
+}
+
+.speech-bubble {
+  position: absolute;
+  background: #1776ff;
+  border-radius: 0.4em;
+  top: -3rem;
+  left: 8rem;
+  color: #fff;
+  font-weight: bold;
+  font-size: 3rem;
+}
+
+.speech-bubble:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 0;
+  border: 10px solid transparent;
+  border-top-color: #1776ff;
+  border-bottom: 0;
+  margin-left: -10px;
+  margin-bottom: -10px;
+}
+
+.tips .bluepan,
+.tips .bluepan SMALL,
+.tips .bluepan H2,
+.tips .bluepan H4 {
+  color: #227aff;
+}
+
+.tips .greenpan,
+.tips .greenpan SMALL,
+.tips .greenpan H2,
+.tips .greenpan H4 {
+  color: #07b59c;
+}
+
+.tips .graypan {
+  color: #aaaaaa !important;
+}
+
+.howto.stxt u {
+  font-weight: bold;
+  text-decoration: underline;
+  text-underline-position: under;
+}
+
+.howtip table {
+  margin-top: 0 !important;
+}
+.tips .howto.howtip table TR {
+  background: #e5f2ff;
+  margin-bottom: 0rem;
+}
+
+.moretipTitle,
+.moretipTxt {
+  padding: 1rem 7rem !important;
+  font-size: 2.4rem !important;
+  line-height: 3.6rem !important;
+  color: #505050 !important;
+}
+
+.moretipTitle {
+  color: #000 !important;
+}
+
+.moreTips_wrap {
+  margin-bottom: 12rem;
+}
+
+.tips .moviearea {
+  text-align: center;
+  padding-top: 6rem;
+}
+.tips .moviearea IFRAME {
+  width: 86.1111vw;
+  max-width: 620px;
+  height: 48.61111vw;
+  max-height: 350px;
+}
+
+.tips .content IMG.text_img_icon {
+  width: 4.5vw;
+  max-width: max-content;
+  height: max-content;
+  display: inline-block;
+  vertical-align: sub;
+}
+
+.tips .content IMG.text_img_icon2 {
+  width: 13vw;
+  margin: 0 auto;
+  display: block;
+}
+
+.tips .content IMG.con_img {
+  width: 90%;
+  padding: 5%;
+}
+
+.SwipeArea {
+  padding: 0rem 0 0rem;
+  position: relative;
+  background: #f2f2f2;
+}
+.SwipeArea H4 {
+  color: #227aff;
+}
+.SwipeArea A {
+  height: 38.4rem;
+  width: 10rem;
+  display: block;
+  background-size: 10rem auto;
+  position: absolute;
+  background-repeat: no-repeat;
+}
+
+.SwipeArea2 A {
+  height: 86.4rem;
+  width: 10rem;
+  display: block;
+  background-size: 10rem auto;
+  position: absolute;
+  background-repeat: no-repeat;
+}
+.SwipeArea3 A {
+  height: 67.5rem;
+  width: 10rem;
+  display: block;
+  background-size: 10rem auto;
+  position: absolute;
+  background-repeat: no-repeat;
+}
+.SwipeArea #ArrowL {
+  background-image: url(arrowL_2.png);
+  background-position: left center;
+}
+.SwipeArea #ArrowR {
+  margin-left: 62rem;
+  background-image: url(arrowR_2.png);
+  background-position: right center;
+}
+.SwipeArea #ArrowL_1 {
+  background-image: url(arrowL.png);
+  background-position: left center;
+  margin-left: 2rem;
+}
+.SwipeArea #ArrowR_1 {
+  position: absolute;
+  right: 2rem;
+  background-image: url(arrowR.png);
+  background-position: right center;
+}
+.SwipeDots {
+  text-align: center;
+  color: #979797;
+  font-size: 2.1em;
+  margin-top: 4rem;
+  /*    margin-bottom: 10rem;*/
+}
+.SwipeDots B {
+  color: #000;
+}
+.SwipeWrap {
+  width: 100%;
+  overflow: hidden;
+}
+
+.SwipeInner img {
+  width: 72rem;
+  height: 38.4rem !important;
+  overflow: hidden;
+  display: inline-block !important;
+  box-sizing: border-box;
+  float: left;
+}
+.SwipeInner.SwipeInner2 img {
+  width: 72rem;
+  height: 37.6rem !important;
+}
+
+.SwipeInner.SwipeInner3 img {
+  width: 72rem;
+  height: 40.2rem !important;
+}
+
+.SwipeArea #ArrowL_2 {
+  background-image: url(arrowL_2.png);
+  background-position: left center;
+  margin-left: 2rem;
+}
+.SwipeArea #ArrowR_2 {
+  position: absolute;
+  right: 2rem;
+  background-image: url(arrowR_2.png);
+  background-position: right center;
+}
+
+.SwipeArea #ArrowL_3 {
+  background-image: url(arrowL_2.png);
+  background-position: left center;
+  margin-left: 2rem;
+}
+.SwipeArea #ArrowR_3 {
+  position: absolute;
+  right: 2rem;
+  background-image: url(arrowR_2.png);
+  background-position: right center;
+}
+
+#SwipeArea2 img {
+  width: 72rem;
+  height: 67.5rem;
+  overflow: hidden;
+  display: inline-block !important;
+  box-sizing: border-box;
+  float: left;
+}
+
+.tips .howto.card TABLE TR {
+  background: none;
+  margin-top: 3rem;
+}
+.tips .howto.howtosub.card TD {
+  padding: 0;
+}
+.tips .howtoimg.card {
+  margin-bottom: 15rem;
+}
+.tips DIV.lines {
+  margin-left: 5rem;
+  margin-right: 5rem;
+  margin-top: 2rem;
+  height: 1px;
+  background: linear-gradient(
+    transparent 0%,
+    transparent 50%,
+    #cccccc 50%,
+    #cccccc 100%
+  );
+}
+.tips .howto.howtosub.card TD .disclaimer {
+  padding: 0;
+  font-size: 2rem;
+  color: #aaaaaa !important;
+}
+
+.tips .content .disclaimer {
+  font-size: 1.8rem !important;
+  position: absolute;
+  bottom: 0;
+}
+
+.SwipeArea table th{
+ height: 5rem;  
+ padding-bottom: 6rem;
+}
+.SwipeArea table th img{
+  height: auto!important;;
+}
+.SwipeInner div{ display:block; float: left;}
+.SwipeInner table  {
+
+}
+.SwipeInner .img_tr{
+  background: #fbfbfb;
+  display: flex;
+  width: 72rem!important;
+  /*border: 0.5px solid #d6d6d6;*/
+ /*border-radius: 35px;*/
+  margin-bottom: 3rem;
+  padding: 0 0;
+  box-sizing: border-box!important;
+}
+
+.SwipeInner .img_tr img{ 
+  width: 72rem!important;
+  height: 100%!important;
+  margin: 0 auto;
+}
+.SwipeInner .img_tr .slide_txt{ 
+  position: absolute;
+  top:60rem;
+}
+.SwipeInner .img_tr .slide_txt h4{ 
+  font-family: "SamsungSharpSans", Arial, sans-serif;
+  font-size: 4.6em;
+  color: #fff;
+  padding-bottom: 3rem;
+}
+.SwipeInner .img_tr .slide_txt p{ 
+  font-family: "SamsungOne", Arial, sans-serif!important;
+  font-size: 2.6em;
+  color: #fff;
+  line-height: 3.6rem
+}
+
+.SwipeInner .howto{
+  width: 72rem;
+}
+.SwipeInner .howto P {
+  font-family: "SamsungOne", Arial, sans-serif!important;
+  color: #818181;
+  text-align: left;
+  font-size: 2.4rem;
+  font-family: "SamsungOneKorean", "RobotoRegular", Arial, sans-serif;
+  line-height: 3.4rem;
+  height: 32rem;
+  overflow-y: scroll;
+  padding: 0 !important;
+  margin: 0 5rem;
+ 
+}
+
+.SwipeInner .howto P::-webkit-scrollbar {
+  -webkit-appearance: none;
+}
+
+.SwipeInner .howto P::-webkit-scrollbar:vertical {
+  width: 3px;
+}
+
+.SwipeInner .howto P::-webkit-scrollbar:horizontal {
+  height: 11px;
+}
+
+.SwipeInner .howto P::-webkit-scrollbar-thumb {
+  border-radius: 8px;
+  border: 2px solid #818181; /* should match background, can't be transparent */
+  background-color: #818181;
+}
+
+.tips .howto h5{
+  font-family: "SamsungSharpSans", Arial, sans-serif;
+  color: #252525;
+  margin-top: 0rem;
+  font-size: 3.4rem;
+  padding: 0rem 5rem 1rem;
+  font-weight: 90;
+}
+.tips .howto h5 b{
+  font-family: "SamsungSharpSans", Arial, sans-serif;
+  font-weight: bold;
+}
+.SwipeArea #ArrowL_1 {
+  background-image: url(arrowL.png);
+  left:26rem;
+  background-position: center;
+  background-size: cover;
+  width: 2.5rem;
+  height: 2.5rem;
+  margin-left: 0rem;
+  bottom:1rem;
+  top: auto;
+}
+.SwipeArea #ArrowR_1 {
+  position: absolute;
+  right: 26rem;
+  background-size: cover;
+  width: 2.5rem;
+  height: 2.5rem;
+  background-image: url(arrowR.png);
+  background-position: center;
+  bottom:1rem;
+  top: auto;
+}
+.SwipeArea .ctaBtn {
+  position: relative;
+  float: left;
+  width: 56rem;
+  height: 2.5rem;
+  background-color: #252525;
+  color: #fff;
+  display: block;
+  text-align: center;
+  padding: 2.5rem;
+  border-radius: 5rem;
+  font-size: 2.8rem;
+  font-weight: 100;
+  box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.4);
+  margin-right: 0rem;
+  margin-top: 10rem;
+  line-height: 100%;
+}
+
+.bottomNav {position: fixed; left: 0; bottom: 0; width: 100%; height: 52px; line-height: 52px; color: #fff; text-align: center;}
+.bottomNav {bottom: -52px; background:#111; transition:bottom .2s;}
+.bottomNav.show {bottom: 0; background:#111;}
+.SwipeInner.swiper-wrapper{
+  margin-bottom: 6rem;
+}
+.swiper-pagination.swiper-pagination-fraction.swiper-pagination-horizontal{
+  text-align: center;
+  color: #979797;
+  font-size: 2.1em;
+  position: absolute;
+  bottom: 1rem;
+  margin-top: 5rem;
+}
+.swiper-button-next:after, .swiper-rtl .swiper-button-prev:after {
+  content: ''!important;
+}
+.swiper-button-prev:after, .swiper-rtl .swiper-button-next:after {
+  content: ''!important;
+}
+.swiper-slide{ margin-bottom: 3rem;}
+
+body{
+  background: #f2f2f2!important;
+}
