@@ -13678,7 +13678,7 @@ button[aria-expanded^="true"] svg {
     --uhf-color-blue-dark: hsl(212, 73%, 36%);
     --uhf-color-red: hsl(0, 100%, 56%);
     --uhf-prop-max-width: 1000px;
-    --uhf-prop-max-width-form: 690px;
+    --uhf-prop-max-width-form: 840px;
     --uhf-wrapper-prop-gap: 6.667vw;
     --uhf-button-prop-font-size: 3.889vw;
     --uhf-based-font-size: 3.333vw;
@@ -13701,7 +13701,7 @@ button[aria-expanded^="true"] svg {
     font-size: var(--uhf-based-font-size);
 }
 .uz-handraizer-form-bg{
-    background: url("https://images.samsung.com/is/image/samsung/assets/uz_ru/unpacked/jan2024/bg-pc.jpg") no-repeat center/cover;
+    background: url("bg-pc.jpg") no-repeat center/cover;
     max-width: 1440px;
     position: absolute;
     top: 0;
@@ -14068,7 +14068,7 @@ button[aria-expanded^="true"] svg {
 
 @media (max-width: 450px) {
     .uz-handraizer-form-bg {
-        background: url("https://images.samsung.com/is/image/samsung/assets/uz_ru/unpacked/jan2024/bg-mb.jpg") no-repeat center/cover;
+        background: url("bg-mb.jpg") no-repeat center/cover;
     }
 
     .uhf-form.js-form-common {

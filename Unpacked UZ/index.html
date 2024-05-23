@@ -16,6 +16,51 @@
     <section class="uz-handraizer-form">
         <div class="uhf-wrapper">
             <div class="uhf-form js-form-common">
+                <div class="row row-gap-4 mb-5">
+                    <div class="col-md-6">
+                        <div class="d-flex align-items-md-start align-items-center flex-column justify-content-center h-100">
+                            <h5 class="fw-bold display-4 text-white mb-4">Galaxy Unpacked</h5>
+                            <p class="text-gray text-center text-md-start fs-6 fw-normal mb-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                            <p class="text-gray text-center text-md-start fs-6 fw-normal">Lorem ipsum dolor sit amet.</p>
+                            <div class="d-flex align-items-center column-gap-3 mt-2 mb-5">
+                                <div class="d-flex flex-column align-items-center">
+                                    <h5 class="display-3 fw-bold text-white my-0" id="days"></h5>
+                                    <p class="fw-normal fs-6 text-gray my-0">Days</p>
+                                </div>
+                                <div class="d-flex justify-content-center flex-column row-gap-2 mb-3">
+                                    <img src="circle.png" style="filter: invert(1);width: 13px;" alt="">
+                                    <img src="circle.png" style="filter: invert(1);width: 13px;" alt="">
+                                </div>
+                                <div class="d-flex flex-column align-items-center">
+                                    <h5 class="display-3 fw-bold text-white my-0" id="hours"></h5>
+                                    <p class="fw-normal fs-6 text-gray my-0">Hours</p>
+                                </div>
+                                <div class="d-flex justify-content-center flex-column row-gap-2 mb-3">
+                                    <img src="circle.png" style="filter: invert(1);width: 13px;" alt="">
+                                    <img src="circle.png" style="filter: invert(1);width: 13px;" alt="">
+                                </div>
+                                <div class="d-flex flex-column align-items-center">
+                                    <h5 class="display-3 fw-bold text-white my-0" id="minutes"></h5>
+                                    <p class="fw-normal fs-6 text-gray my-0">Minutes</p>
+                                </div>
+                                <div class="d-flex justify-content-center flex-column row-gap-2 mb-3">
+                                    <img src="circle.png" style="filter: invert(1);width: 13px;" alt="">
+                                    <img src="circle.png" style="filter: invert(1);width: 13px;" alt="">
+                                </div>
+                                <div class="d-flex flex-column align-items-center">
+                                    <h5 class="display-3 fw-bold text-white my-0" id="seconds"></h5>
+                                    <p class="fw-normal fs-6 text-gray my-0">Seconds</p>
+                                </div>
+                            </div>
+                            <a href="#" class="bg-white rounded-5 text-black px-4 py-2">Here Link</a>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="d-flex">
+                            <img src="ai-square.png" class="w-100" alt="">
+                        </div>
+                    </div>
+                </div>
                 <h2 class="uhf-title"><a id="teg" style="color: #948b7a;">Galaxy AI is coming</a></h2>
                 <div class="uhf-title__description" style="margin-top: 10px;">
                     O'zingiz uchun AI (sun'iy intellektning) yangi davrini kashf qiling.
@@ -63,6 +108,15 @@
                                 <label for="uhf_surname" class="uhf-input__label">F.I.Sh. <sup>*</sup>:</label>
                             </div>
                         </div>
+                        <div>
+                            <div class="uhf-input uhf-input--phone">
+                                <input type="tel" name="uhf_phone" id="uhf_phone"
+                                       class="uhf-input__control js-uhf-input-control js-uhf-input-phone">
+                                <label for="uhf_phone" class="uhf-input__label">Telefon <sup>*</sup>:</label>
+                                <span class="uhf-input--phone__label">+998</span>
+                            </div>
+                            <script src="https://unpkg.com/imask"></script>
+                        </div>
                     </div>
                     <div class="uhf-row">
                         <div class="uhf-row__title">1. Siz qanday smartfondan foydalanasiz?<sup>*</sup></div>
@@ -109,14 +163,14 @@
                                 <label class="uhf-radio">
                                     <input type="checkbox" name="uhf_checkbox_category" value="foldable-phone"
                                            class="uhf-radio__control js-uhf-checkbox-category">
-                                    <span class="uhf-radio__label">Bukiluvchan smartfonlar</span>
+                                    <span class="uhf-radio__label">Bukiluvchan smartfonlar Fold</span>
                                 </label>
                             </div>
                             <div>
                                 <label class="uhf-radio">
                                     <input type="checkbox" name="uhf_checkbox_category" value="note-pc"
                                            class="uhf-radio__control js-uhf-checkbox-category">
-                                    <span class="uhf-radio__label">Noutbuklar</span>
+                                    <span class="uhf-radio__label">Bukiluvchan smartfonlar Flip</span>
                                 </label>
                             </div>
                             <div>
@@ -154,59 +208,17 @@
                                     <span class="uhf-radio__label">Kir yuvish mashinalari</span>
                                 </label>
                             </div>
-                        </div>
-                    </div>
-                    <div class="uhf-row square">
-                        <div class="uhf-row__title">3. Qaysi turdagi takliflar Sizni qiziqtirgan bo'lardi?<sup>*</sup>
-                        </div>
-                        <div class="uhf-fields">
                             <div>
                                 <label class="uhf-radio">
-                                    <input type="checkbox" name="uhf_checkbox_offers" value="memory-increase"
-                                           class="uhf-radio__control js-uhf-checkbox-offers">
-                                    <span class="uhf-radio__label">Xotira hajmini kattalashtirish</span>
-                                </label>
-                            </div>
-                            <div>
-                                <label class="uhf-radio">
-                                    <input type="checkbox" name="uhf_checkbox_offers" value="extra gift"
-                                           class="uhf-radio__control js-uhf-checkbox-offers">
-                                    <span class="uhf-radio__label">Qo'shimcha sovg'a</span>
-                                </label>
-                            </div>
-                            <div>
-                                <label class="uhf-radio">
-                                    <input type="checkbox" name="uhf_checkbox_offers"
-                                           value="protection program Samsung Care++"
-                                           class="uhf-radio__control js-uhf-checkbox-offers">
-                                    <span class="uhf-radio__label">Samsung Care+ himoyasi</span>
-                                </label>
-                            </div>
-                            <div>
-                                <label class="uhf-radio">
-                                    <input type="checkbox" name="uhf_checkbox_offers" value="trade-in"
-                                           class="uhf-radio__control js-uhf-checkbox-offers">
-                                    <span class="uhf-radio__label">Trade-in</span>
-                                </label>
-                            </div>
-                            <div>
-                                <label class="uhf-radio">
-                                    <input type="checkbox" name="uhf_checkbox_offers" value="installment"
-                                           class="uhf-radio__control js-uhf-checkbox-offers">
-                                    <span class="uhf-radio__label">0-0-12 shartlari asosida muddatli to'lov</span>
-                                </label>
-                            </div>
-                            <div>
-                                <label class="uhf-radio">
-                                    <input type="checkbox" name="uhf_checkbox_offers" value="e-vaucher"
-                                           class="uhf-radio__control js-uhf-checkbox-offers">
-                                    <span class="uhf-radio__label">Elektron vaucher</span>
+                                    <input type="checkbox" name="uhf_checkbox_category" value="washing-machines"
+                                           class="uhf-radio__control js-uhf-checkbox-category">
+                                    <span class="uhf-radio__label">Sovutgich</span>
                                 </label>
                             </div>
                         </div>
                     </div>
                     <div class="uhf-row square">
-                        <div class="uhf-row__title">4. AI (sun’iy intellektning) qaysi funksiyalari Siz uchun foydaliroq
+                        <div class="uhf-row__title">3. AI (sun’iy intellektning) qaysi funksiyalari Siz uchun foydaliroq
                             va qiziqroq bo'lardi?<sup>*</sup></div>
                         <div class="uhf-fields">
                             <div>
@@ -237,6 +249,122 @@
                                     <span class="uhf-radio__label">Suratlarni tahrirlash</span>
                                 </label>
                             </div>
+                            <div>
+                                <label class="uhf-radio">
+                                    <input type="checkbox" name="uhf_checkbox_functionalities" value="photo-editing"
+                                           class="uhf-radio__control js-uhf-checkbox-functionalities">
+                                    <span class="uhf-radio__label">Sog'liq monitoringi</span>
+                                </label>
+                            </div>
+                            <div>
+                                <label class="uhf-radio">
+                                    <input type="checkbox" name="uhf_checkbox_functionalities" value="photo-editing"
+                                           class="uhf-radio__control js-uhf-checkbox-functionalities">
+                                    <span class="uhf-radio__label">Ovozli yordamchi</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="uhf-row square">
+                        <div class="uhf-row__title">4. Qiziqishlaringizni belgilang<sup>*</sup></div>
+                        <div class="uhf-fields">
+                            <div>
+                                <label class="uhf-radio">
+                                    <input type="checkbox" name="uhf_checkbox_functionalities" value="camera"
+                                           class="uhf-radio__control js-uhf-checkbox-functionalities">
+                                    <span class="uhf-radio__label">Texnologiyalar</span>
+                                </label>
+                            </div>
+                            <div>
+                                <label class="uhf-radio">
+                                    <input type="checkbox" name="uhf_checkbox_functionalities" value="translation"
+                                           class="uhf-radio__control js-uhf-checkbox-functionalities">
+                                    <span class="uhf-radio__label">O'yin-kulgi</span>
+                                </label>
+                            </div>
+                            <div>
+                                <label class="uhf-radio">
+                                    <input type="checkbox" name="uhf_checkbox_functionalities" value="search"
+                                           class="uhf-radio__control js-uhf-checkbox-functionalities">
+                                    <span class="uhf-radio__label">Sog'lom turmush tarzi & fitnes</span>
+                                </label>
+                            </div>
+                            <div>
+                                <label class="uhf-radio">
+                                    <input type="checkbox" name="uhf_checkbox_functionalities" value="photo-editing"
+                                           class="uhf-radio__control js-uhf-checkbox-functionalities">
+                                    <span class="uhf-radio__label">Sayohat va yangi taassurotlar</span>
+                                </label>
+                            </div>
+                            <div>
+                                <label class="uhf-radio">
+                                    <input type="checkbox" name="uhf_checkbox_functionalities" value="photo-editing"
+                                           class="uhf-radio__control js-uhf-checkbox-functionalities">
+                                    <span class="uhf-radio__label">Moda va go'zallik</span>
+                                </label>
+                            </div>
+                            <div>
+                                <label class="uhf-radio">
+                                    <input type="checkbox" name="uhf_checkbox_functionalities" value="photo-editing"
+                                           class="uhf-radio__control js-uhf-checkbox-functionalities">
+                                    <span class="uhf-radio__label">Mehnat faoliyati va ta'lim</span>
+                                </label>
+                            </div>
+                            <div>
+                                <label class="uhf-radio">
+                                    <input type="checkbox" name="uhf_checkbox_functionalities" value="photo-editing"
+                                           class="uhf-radio__control js-uhf-checkbox-functionalities">
+                                    <span class="uhf-radio__label">Oila va uy</span>
+                                </label>
+                            </div>
+                            <div>
+                                <label class="uhf-radio">
+                                    <input type="checkbox" name="uhf_checkbox_functionalities" value="photo-editing"
+                                           class="uhf-radio__control js-uhf-checkbox-functionalities">
+                                    <span class="uhf-radio__label">Atrof-muhitga g'amxo'rlik</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="uhf-row square">
+                        <div class="uhf-row__title">5. Qaysi turdagi takliflar Sizni qiziqtirgan bo'lardi?<sup>*</sup>
+                        </div>
+                        <div class="uhf-fields">
+                            <div>
+                                <label class="uhf-radio">
+                                    <input type="checkbox" name="uhf_checkbox_offers" value="memory-increase"
+                                           class="uhf-radio__control js-uhf-checkbox-offers">
+                                    <span class="uhf-radio__label">Xotira hajmini kattalashtirish</span>
+                                </label>
+                            </div>
+                            <div>
+                                <label class="uhf-radio">
+                                    <input type="checkbox" name="uhf_checkbox_offers" value="extra gift"
+                                           class="uhf-radio__control js-uhf-checkbox-offers">
+                                    <span class="uhf-radio__label">Qo'shimcha sovg'a</span>
+                                </label>
+                            </div>
+                            <div>
+                                <label class="uhf-radio">
+                                    <input type="checkbox" name="uhf_checkbox_offers" value="trade-in"
+                                           class="uhf-radio__control js-uhf-checkbox-offers">
+                                    <span class="uhf-radio__label">Trade-in</span>
+                                </label>
+                            </div>
+                            <div>
+                                <label class="uhf-radio">
+                                    <input type="checkbox" name="uhf_checkbox_offers" value="installment"
+                                           class="uhf-radio__control js-uhf-checkbox-offers">
+                                    <span class="uhf-radio__label">0-0-12 shartlari asosida muddatli to'lov</span>
+                                </label>
+                            </div>
+                            <div>
+                                <label class="uhf-radio">
+                                    <input type="checkbox" name="uhf_checkbox_offers" value="e-vaucher"
+                                           class="uhf-radio__control js-uhf-checkbox-offers">
+                                    <span class="uhf-radio__label">Elektron vaucher</span>
+                                </label>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -246,7 +374,7 @@
                         <label class="uhf-radio">
                             <input type="checkbox" name="uhf_radio_privacy"
                                    class="uhf-radio__control js-checkbox-agree">
-                            <span class="uhf-radio__label"><span class="uhf-privacy-label">Shaxsiy ma'lumotlarim uzatilishi va qayta ishlanishiga <a
+                            <span class="uhf-radio__label d-flex align-items-center"><span class="uhf-privacy-label">Shaxsiy ma'lumotlarim uzatilishi va qayta ishlanishiga <a
                                     href="https://www.samsung.com/uz_uz/info/privacy/#personal_data">o'z roziligimni bildiraman</a>.
                                     </span></span>
                         </label>
