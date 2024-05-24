@@ -14040,6 +14040,10 @@ button[aria-expanded^="true"] svg {
     text-align: center;
 }
 
+.bg-banner {
+    background: url("./bg-pc.jpg") no-repeat center/cover;
+}
+
 
 @media (min-width: 721px) {
     .uz-handraizer-form {
@@ -14063,6 +14067,12 @@ button[aria-expanded^="true"] svg {
     .uz-handraizer-form {
         --uhf-based-gap: 24px;
         --uhf-based-font-size: 18px;
+    }
+}
+
+@media (max-width: 767px) {
+    .bg-banner {
+        background: url("./bg-mb.jpg") no-repeat bottom/cover;
     }
 }
 
