@@ -288,7 +288,7 @@ const UzUnpackedForm = () => {
 UzUnpackedForm();
 
 // Set the date we're counting down to
-let countDownDate = new Date("Jun 17, 2024 23:00:00").getTime();
+let countDownDate = new Date("Jul 10, 2024 18:00:00").getTime();
 
 // Update the count down every 1 second
 let x = setInterval(function () {
