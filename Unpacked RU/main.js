@@ -71,7 +71,7 @@ const UzUnpackedForm = () => {
     const inputControlsRadio = document.querySelectorAll('.uhf-radio__control');
     const inputControlsName = document.querySelector('.js-uhf-input-name');
     const inputControlsEmail = document.querySelector('.js-uhf-input-email');
-    // const inputControlsPhone = document.querySelector('.js-uhf-input-phone');
+    const inputControlsPhone = document.querySelector('.js-uhf-input-phone');
     const submitButton = document.querySelector('.js-uhf-button-sbt');
     // const checkboxSubscribe = document.querySelector('.js-checkbox-subscribe');
     const checkboxAgree = document.querySelector('.js-checkbox-agree');
@@ -81,6 +81,7 @@ const UzUnpackedForm = () => {
     const validateEmail = (email) => /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(String(email).toLowerCase());
     const validateFio = (fio) => /^([^0-9]*)$/.test(fio);
     const formSuccessed = () => inputControlsName.value &&
+    inputControlsPhone.value.length === 13 &&
     validateFio(inputControlsName.value) &&
     validateEmail(inputControlsEmail.value) &&
     checkboxAgree.checked &&
@@ -100,7 +101,7 @@ const UzUnpackedForm = () => {
         mask: '(00)000-00-00',
     };
 
-    // const maskPhone = IMask(inputControlsPhone, maskOptionsPhone);
+    const maskPhone = IMask(inputControlsPhone, maskOptionsPhone);
     function isCheckboxedQuestionAnswered(checkboxClass)
     {
         const selected = document.querySelectorAll('.'+checkboxClass+':checked');
@@ -201,6 +202,7 @@ const UzUnpackedForm = () => {
                 campaignCode : 'BQ5UZ',
                 email: inputControlsEmail.value,
                 name: inputControlsName.value,
+                phone: inputControlsPhone.value,
                 phone_in_use: document.querySelector('.js-uhf-radio-device:checked') ? document.querySelector('.js-uhf-radio-device:checked').value : '',
                 interested_category: insterstingCategories,
                 interested_functionality: insterstingFunctionalities,
@@ -210,7 +212,7 @@ const UzUnpackedForm = () => {
                 cid: urlParams.get('cid') ?? 'direct',
                 url: window.location.href
             }
-
+            console.log(sendData);
             event.currentTarget.setAttribute('disabled', 'disabled');
 
             $.ajax({
@@ -239,10 +241,10 @@ const UzUnpackedForm = () => {
                             sendOmniEventUzUnpackedFormSendingOption(uhfAnalyticSendingTag.name)
                             sendOmniEventUzUnpackedFormSendingOption('delete', 'delete')
                         }
-                        // if(inputControlsPhone.value) {
-                        //     sendOmniEventUzUnpackedFormSendingOption(uhfAnalyticSendingTag.tel)
-                        //     sendOmniEventUzUnpackedFormSendingOption('delete', 'delete')
-                        // }
+                        if(inputControlsPhone.value) {
+                            sendOmniEventUzUnpackedFormSendingOption(uhfAnalyticSendingTag.tel)
+                            sendOmniEventUzUnpackedFormSendingOption('delete', 'delete')
+                        }
                         if(inputControlsEmail.value) {
                             sendOmniEventUzUnpackedFormSendingOption(uhfAnalyticSendingTag.email)
                             sendOmniEventUzUnpackedFormSendingOption('delete', 'delete')
