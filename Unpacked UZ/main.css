@@ -13704,7 +13704,7 @@ button[aria-expanded^="true"] svg {
 }
 
 .uz-handraizer-form-bg {
-    background: url("bg-pc.jpg") no-repeat center/cover;
+    background: url("banner-pc.jpg") no-repeat center/cover;
     max-width: 1440px;
     position: absolute;
     top: 0;
@@ -14046,7 +14046,7 @@ button[aria-expanded^="true"] svg {
 }
 
 .bg-banner {
-    background: url("./bg-pc.jpg") no-repeat center/cover;
+    background: url("./banner-pc.jpg") no-repeat center/cover;
 }
 
 
