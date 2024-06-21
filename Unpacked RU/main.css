@@ -13704,7 +13704,7 @@ button[aria-expanded^="true"] svg {
 }
 
 .uz-handraizer-form-bg {
-    background: url("bg-pc-banner.jpg") no-repeat center/cover;
+    background: url("bg-pc.jpg") no-repeat center/cover;
     max-width: 1440px;
     position: absolute;
     top: 0;
@@ -14046,7 +14046,7 @@ button[aria-expanded^="true"] svg {
 }
 
 .bg-banner {
-    background: url("./bg-pc-banner.jpg") no-repeat right/cover;
+    background: url("./bg-pc.jpg") no-repeat right/cover;
 }
 
 
@@ -14077,13 +14077,13 @@ button[aria-expanded^="true"] svg {
 
 @media (max-width: 767px) {
     .bg-banner {
-        background: url("bg-mb-banner.jpg") no-repeat bottom/cover;
+        background: url("bg-mb.jpg") no-repeat bottom/cover;
     }
 }
 
 @media (max-width: 450px) {
     .uz-handraizer-form-bg {
-        background: url("bg-mb-banner.jpg") no-repeat center/cover;
+        background: url("bg-mb.jpg") no-repeat center/cover;
     }
 
     .uhf-form.js-form-common {
