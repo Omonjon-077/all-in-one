@@ -13667,6 +13667,7 @@ button[aria-expanded^="true"] svg {
     background-color: var(--bs-white);
     height: 2px;
 }
+
 .uz-handraizer-form-cnt {
     --uhf-color-white: hsl(0, 0%, 100%);
     --uhf-color-light: hsl(0, 0%, 96.1%);
@@ -13693,14 +13694,16 @@ button[aria-expanded^="true"] svg {
     padding: 6.333em 0;
     max-width: 1440px;
     margin: 0 auto;
-    --width-arrow:24px;
+    --width-arrow: 24px;
     position: relative;
     overflow: hidden;
 }
+
 .uz-handraizer-form {
     font-size: var(--uhf-based-font-size);
 }
-.uz-handraizer-form-bg{
+
+.uz-handraizer-form-bg {
     background: url("bg-pc.jpg") no-repeat center/cover;
     max-width: 1440px;
     position: absolute;
@@ -13731,7 +13734,7 @@ button[aria-expanded^="true"] svg {
 
 .uhf-title {
     font-size: 2em;
-    font-family: 'SamsungSharpSans',arial,sans-serif;
+    font-family: 'SamsungSharpSans', arial, sans-serif;
     font-weight: 700;
     line-height: 1.2;
     margin: 0;
@@ -13787,11 +13790,13 @@ button[aria-expanded^="true"] svg {
     grid-template-columns: 1fr;
     grid-gap: 0 0;
 }
+
 .accordion-button span {
     width: calc(100% - var(--width-arrow)) !important;
 }
+
 .accordion-button svg {
-    width:var(--width-arrow) !important;
+    width: var(--width-arrow) !important;
     height: auto !important;
 }
 
@@ -14088,6 +14093,7 @@ button[aria-expanded^="true"] svg {
     .uhf-row__title {
         padding-right: 25px;
     }
+
     .uhf-row.uhf-fields.uhf-fields--input-text {
         grid-template-columns: repeat(1, 1fr);
     }
@@ -14097,6 +14103,6 @@ button[aria-expanded^="true"] svg {
     }
 }
 
-.breadcrumb  {
+.breadcrumb {
     margin-bottom: 0 !important;
 }
