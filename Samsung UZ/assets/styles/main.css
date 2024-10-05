@@ -1,0 +1,344 @@
+/* Google Fonts | Omonjon */
+@import url('https://fonts.cdnfonts.com/css/samsungone');
+
+:root {
+    --body-font: 'SamsungOne', sans-serif,;
+    --body-font2: 'Samsung Sharp Sans', sans-serif;
+}
+
+/* Bootstrap tools | Omonjon */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --title-color: #313131;
+    --title-color-after: rgb(20, 82, 159);
+    --text-color: #000000;
+    --text-color-light: #737387;
+    --color-gray: #F1F2F4;
+    --primary-transition: 0.37s;
+}
+
+body {
+    font-family: var(--body-font);
+    font-family: var(--body-font2);
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+.title-color {
+    color: var(--title-color) !important;
+}
+
+.title-color-after {
+    color: var(--title-color-after) !important;
+}
+
+.text-color {
+    color: var(--text-color) !important;
+}
+
+.text-color-light {
+    color: var(--text-color-light) !important;
+}
+
+.w-26 {
+    width: 26%;
+}
+
+.w-35px {
+    width: 35px;
+}
+
+.w-56px {
+    width: 56px;
+}
+
+.h-35px {
+    height: 35px;
+}
+
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+    padding-right: 0;
+    padding-left: 0;
+    padding-bottom: 0;
+    padding-top: 0;
+}
+
+.accordion-button::after {
+    display: none;
+}
+
+button[aria-expanded^="true"] i {
+    background-color: var(--bs-primary) !important;
+    transform: rotate(-180deg) !important;
+    color: black !important;
+    box-shadow: 0px 8px 18px -8px rgba(116, 246, 0, 0.90);
+}
+
+.btn-primary {
+    border-radius: 50px;
+    padding: 10px 30px;
+    color: white;
+    background: var(--bs-black);
+}
+
+.border-bottom-self{
+    border-bottom: 2px solid black;
+}
+
+.self-height-lg-siwper {
+    height: 300px;
+}
+
+.box-shadow-none {
+    box-shadow: none !important;
+}
+
+.text-tg {
+    color: #4C82F7 !important;
+}
+
+.bg-gray {
+    background: #F5F5F6;
+}
+
+.primary-shadow {
+    box-shadow: 0px 8px 18px -8px rgba(116, 246, 0, 0.90);
+}
+
+.self-absolute {
+    position: absolute !important;
+    top: 10px !important;
+    left: 30px !important;
+}
+
+.bg-gray-light {
+    background-color: #1c2029 !important;
+}
+
+.btn-secondary {
+    border-radius: 2px;
+    color: var(--bs-primary);
+    border: 1px solid var(--bs-primary);
+    background: transparent;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+.z-index-1 {
+    z-index: 1;
+}
+
+.z-index-2 {
+    z-index: 2;
+}
+
+.z-index-3 {
+    z-index: 3;
+}
+
+.z-index-4 {
+    z-index: 4;
+}
+
+.z-index-5 {
+    z-index: 5;
+}
+
+.z-index-6 {
+    z-index: 6;
+}
+
+.z-index-7 {
+    z-index: 7;
+}
+
+.z-index-8 {
+    z-index: 8;
+}
+
+.z-index-9 {
+    z-index: 9;
+}
+
+.z-index-10 {
+    z-index: 10;
+}
+
+.fs-6 {
+    font-size: 1.25rem !important;
+}
+
+.fs-7 {
+    font-size: 1rem !important;
+}
+
+.fs-8 {
+    font-size: 0.875rem !important;
+}
+
+.fs-9 {
+    font-size: 0.75rem !important;
+}
+
+.w-max-content {
+    width: max-content !important;
+}
+
+.opacity-7 {
+    opacity: 0.7;
+}
+
+.outline-none {
+    outline: none;
+}
+
+.transition {
+    transition: .4s;
+}
+
+.fs-title {
+    font-size: 2.25rem;
+}
+
+.fs-title-sec {
+    font-size: 1.625rem;
+}
+
+input,
+button {
+    outline: none;
+}
+
+.border-none {
+    border: none;
+}
+
+.primary-hover:hover {
+    color: var(--bs-primary) !important;
+}
+
+li,
+ul,
+ol {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+p {
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* ==================== LOADER | Omonjon ==================== */
+.load {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    margin: auto 0;
+    background-color: var(--bs-white);
+    display: grid;
+    place-items: center;
+    z-index: 100;
+}
+
+.load .load-gif {
+    max-width: 500px;
+    width: 100%;
+    height: 100%;
+}
+
+/* ==================== HEADER | Omonjon ==================== */
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: white;
+    z-index: 10;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+/*=============== BANNER | Omonjon ===============*/
+.bg-banner-1{
+    background: url("../images/bg-1.png") no-repeat center/cover;
+    width: 100%;
+    height: 257px;
+}
+
+.bg-banner-2{
+    background: url("../images/bg-2.png") no-repeat center/cover;
+    width: 100%;
+    height: 257px;
+}
+
+.bg-banner-3{
+    background: url("../images/bg-3.png") no-repeat center/cover;
+    width: 100%;
+    height: 257px;
+}
+
+.bg-banner-4{
+    background: url("../images/bg-4.png") no-repeat center/cover;
+    width: 100%;
+    height: 257px;
+}
+
+/*=============== SCROLL BAR | Omonjon ===============*/
+/*::-webkit-scrollbar {*/
+/*    width: .6rem;*/
+/*    border-radius: .5rem;*/
+/*    background-color: hsla(93, 36%, 26%, 0.71)*/
+/*}*/
+
+/*::-webkit-scrollbar-thumb {*/
+/*    background-color: hsla(92, 100%, 48%, 0.743);*/
+/*    border-radius: .5rem;*/
+/*}*/
+
+/*::-webkit-scrollbar-thumb:hover {*/
+/*    background-color: var(--bs-primary);*/
+/*}*/
+
+/*=============== SCROLL UP | Omonjon ===============*/
+.scroll_up {
+    position: fixed;
+    right: 3.5rem;
+    bottom: -100%;
+    background-color: var(--bs-black);
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    display: inline-flex;
+    padding: .35rem;
+    border-radius: .25rem;
+    font-size: 1.1rem;
+    color: var(--bs-white);
+    z-index: 10;
+    transition: bottom .4s, transform .4s, background-color .4s;
+}
+
+.scroll_up:hover {
+    transform: translateY(-.35rem);
+    background-color: var(--bs-white);
+    color: black;
+}
+
+/* Show Scroll Up*/
+.show-scroll {
+    bottom: 4rem;
+}
